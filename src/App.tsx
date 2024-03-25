@@ -74,6 +74,7 @@ function App() {
             </div>
           </div>
 
+          <div className="max-w-40">
           <div className="flex flex-col justify-start items-start pt-[15px] pl-4">
             <div className="pl-2">
               <div className="flex justify-center items-center bg-[#E6E6E6] w-[170px] h-[50px] rounded-[10px]">
@@ -99,6 +100,8 @@ function App() {
               </div>
             </div>
             <div className="bg-[#E7E7E7] w-[14px] h-[15px] rounded-full"></div>
+          </div>
+
           </div>
 
 
