@@ -2,16 +2,22 @@ import { FaAngleDown } from "react-icons/fa";
 import "./App.css";
 import { BiSolidEditAlt } from "react-icons/bi";
 import { TbDotsVertical } from "react-icons/tb";
+import { BsEmojiWink } from "react-icons/bs";
+import { IoIosSend } from "react-icons/io";
+import { MdKeyboardVoice } from "react-icons/md";
+import { TiAttachment } from "react-icons/ti";
 
 function App() {
   return (
     <>
       {/*Main Container*/}
-      <div className="flex flex-1 flex-row justify-between items-center w-full p-10 bg-red-500">
-        {/*Message Group*/}
+      <div className="flex flex-1 flex-row justify-between items-center w-full h-full bg-red-500">
+        {/*Message Group - Container*/}
         <div className="flex flex-col justify-start items-start w-[500px] gap-10 bg-white">
           <div className="flex flex-row justify-start items-center w-full">
-            <p className="text-[16px] font-medium pr-4">Recent Messages</p>
+            <p className="text-[16px] font-medium text-[#323232] pr-4">
+              Recent Messages
+            </p>
             <div className="flex flex-row justify-between items-center w-1/2">
               <button className="hover:scale-95 transition-all">
                 <FaAngleDown />
@@ -54,8 +60,8 @@ function App() {
           </button>
         </div>
 
-        {/*Chat Screen*/}
-        <div className="flex flex-col justify-start items-start w-[819px] p-5 bg-white">
+        {/*Chat Screen - Container*/}
+        <div className="flex flex-col justify-center items-center w-[819px] p-5 bg-white">
           <div className="flex flex-row justify-start items-center w-full gap-4  border-b-[1px] border-[#DEDCDC] pb-[15px]">
             <div className="w-[48px] h-[48px]">
               <img
@@ -64,47 +70,172 @@ function App() {
               />
             </div>
             <div className="flex flex-col justify-start items-start">
-              <p className="text-[20px] font-medium text-[#1E1E1E]">Power</p>
+              <p className="text-[20px] font-medium text-[#323232]">Power</p>
               <p className="text-[14px] font-normal text-[#707070]">
                 Chainsawman
               </p>
             </div>
-            <div className="flex flex-1 flex-row justify-end items-end">
+            <div className="flex flex-1 flex-row justify-end items-end text-[24px] text-[#323232]">
               <TbDotsVertical />
             </div>
           </div>
 
-          <div className="max-w-40">
-          <div className="flex flex-col justify-start items-start pt-[15px] pl-4">
-            <div className="pl-2">
-              <div className="flex justify-center items-center bg-[#E6E6E6] w-[170px] h-[50px] rounded-[10px]">
-                <p className="text-[#303030]">Hey there!</p>
+          {/*Chat Screen - Messages*/}
+          <div className="w-full pt-5">
+            {/*Chat Screen - Messages (Sender)*/}
+            <div className="flex flex-col justify-start items-start pt-2 pl-4">
+              <div className="pl-2">
+                <div className="flex justify-center items-center bg-[#E6E6E6] rounded-[10px] px-2">
+                  <p className="text-[#323232] p-4 inline text-left">
+                    Hey, there!
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[#E7E7E7] w-[14px] h-[15px] rounded-full"></div>
+            </div>
+
+            {/*Chat Screen - Messages (Sender)*/}
+            <div className="flex flex-col justify-start items-start pt-2 pl-4">
+              <div className="pl-2">
+                <div className="flex justify-center items-center bg-[#E6E6E6] rounded-[10px] px-2">
+                  <p className="text-[#323232] p-4 inline text-left">
+                    How are you?
+                  </p>
+                </div>
+              </div>
+              <div className=" bg-[#E7E7E7] w-[14px] h-[15px] rounded-full">
+                <div>
+                  <p className="flex flex-row justify-start items-center w-[200px] text-[13px] font-light text-[#707070] pl-6 pt-[3px]">
+                    Today, 8:30 PM
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="bg-[#E7E7E7] w-[14px] h-[15px] rounded-full"></div>
-          </div>
 
-          <div className="flex flex-col justify-start items-start pt-[15px] pl-4">
-            <div className="pl-2">
-              <div className="flex justify-center items-center bg-[#E6E6E6] w-[170px] h-[50px] rounded-[10px]">
-                <p className="text-[#303030]">How are you?</p>
+            {/*Chat Screen - Messages (Receiver)*/}
+            <div className="flex flex-col justify-end items-end pt-2 pr-4">
+              <div className="pr-2">
+                <div className="flex justify-center items-center bg-[#A64039] rounded-[10px] px-2">
+                  <p className="text-white p-4 inline text-left">Hello!</p>
+                </div>
+              </div>
+              <div className=" bg-[#A64039] w-[14px] h-[15px] rounded-full"></div>
+            </div>
+
+            {/*Chat Screen - Messages (Receiver)*/}
+            <div className="flex flex-col justify-end items-end pt-2 pr-4">
+              <div className="pr-2">
+                <div className="flex justify-center items-center bg-[#A64039] rounded-[10px] px-2">
+                  <p className="text-white p-4 inline text-left">
+                    I am fine and how are you?
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-row">
+                <p className="flex flex-1 flex-row justify-end items-center w-[200px] text-[13px] font-light text-[#707070] pr-3 pt-[3px]">
+                  Today, 8:30 PM
+                </p>
+                <div className=" bg-[#A64039] w-[14px] h-[15px] rounded-full"></div>
               </div>
             </div>
-            <div className="bg-[#E7E7E7] w-[14px] h-[15px] rounded-full"></div>
-          </div>
 
-          <div className="flex flex-col justify-start items-start pt-[15px] pl-4">
-            <div className="pl-2">
-              <div className="flex justify-center items-center bg-[#E6E6E6] w-[170px] h-[50px] rounded-[10px]">
-                <p className="text-[#303030]">Hey there!</p>
+            {/*Chat Screen - Messages (Sender)*/}
+            <div className="flex flex-col justify-start items-start pt-2 pl-4">
+              <div className="pl-2">
+                <div className="flex justify-center items-center bg-[#E6E6E6] rounded-[10px] px-2">
+                  <p className="text-[#323232] p-4 inline text-left">
+                    I am doing well. Can we meet tomorrow?
+                  </p>
+                </div>
+              </div>
+              <div className=" bg-[#E7E7E7] w-[14px] h-[15px] rounded-full">
+                <div>
+                  <p className="flex flex-row justify-start items-center w-[200px] text-[13px] font-light text-[#707070] pl-6 pt-[3px]">
+                    Today, 8:30 PM
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="bg-[#E7E7E7] w-[14px] h-[15px] rounded-full"></div>
+
+            {/*Chat Screen - Messages (Receiver)*/}
+            <div className="flex flex-col justify-end items-end pt-2 pr-4">
+              <div className="pr-2">
+                <div className="flex justify-center items-center bg-[#A64039] rounded-[10px] px-2">
+                  <p className="text-white p-4 inline text-left">Yes, sure!</p>
+                </div>
+              </div>
+              <div className="flex flex-row">
+                <p className="flex flex-1 flex-row justify-end items-center w-[200px] text-[13px] font-light text-[#707070] pr-3 pt-[3px]">
+                  Today, 8:30 PM
+                </p>
+                <div className=" bg-[#A64039] w-[14px] h-[15px] rounded-full"></div>
+              </div>
+            </div>
+
+            {/*Chat Screen - Messages - Voice Recording (Sender)*/}
+            <div className="flex flex-col justify-start items-start pt2 pl-4">
+              <div className="pl-2">
+                <div className="flex justify-center items-center px-2">
+                  <img src="/images/voice-recording.png" />
+                </div>
+              </div>
+              <div className="bg-[#E7E7E7] w-[14px] h-[15px] rounded-full"></div>
+            </div>
+
+            <div className="flex flex-col justify-start items-start pt-2 pl-4">
+              <div className="pl-2">
+                <div className="flex justify-center items-center px-2">
+                  <img src="/images/voice-recording.png" />
+                </div>
+              </div>
+              <div className="bg-[#E7E7E7] w-[14px] h-[15px] rounded-full">
+                <div>
+                  <p className="flex flex-row justify-start items-center w-[200px] text-[13px] font-light text-[#707070] pl-6 pt-[3px]">
+                    Today, 8:30 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/*Chat Screen - Messages (Receiver)*/}
+            <div className="flex flex-col justify-end items-end pt-2 pr-4">
+              <div className="pr-2">
+                <div className="flex justify-center items-center bg-[#A64039] rounded-[10px] px-2">
+                  <p className="text-white p-4 inline text-left">Ok, got it!</p>
+                </div>
+              </div>
+              <div className="flex flex-row">
+                <p className="flex flex-1 flex-row justify-end items-center w-[200px] text-[13px] font-light text-[#707070] pr-3 pt-[3px]">
+                  Today, 8:30 PM
+                </p>
+                <div className=" bg-[#A64039] w-[14px] h-[15px] rounded-full"></div>
+              </div>
+            </div>
           </div>
 
+          {/*Chat Screen - Input Field*/}
+          <div className="flex items-center relative w-[750px] pt-10 pb-3">
+            <div className="flex justify-center items-center gap-2 absolute right-0 text-[20px] mr-4">
+              <button className="text-[17px]">
+                <BsEmojiWink />
+              </button>
+              <button>
+                <MdKeyboardVoice />
+              </button>
+              <button>
+                <TiAttachment />
+              </button>
+              <div className="flex justify-center items-center border-l-2 pl-2">
+                <button>
+                  <IoIosSend />
+                </button>
+              </div>
+            </div>
+            <input
+              className="bg-[#F5F5F5] text-[14px] font-normal text-[#A0A0A0] pl-4 rounded-[8px] py-[15px] pr-[150px] w-full"
+              placeholder="Type something ..."
+            />
           </div>
-
-
         </div>
 
         {/*Info*/}
