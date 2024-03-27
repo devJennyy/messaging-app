@@ -28,14 +28,20 @@ function App() {
             </button>
           </div>
 
-          <div className="flex flex-col justify-start items-start text-left w-full">
-            <div className="w-[52px] h-[52px] rounded-[16px]">
-              <img src="/images/power-1.jpeg" className="w-full object-cover" />
+          <div className="flex flex-row justify-start items-center w-full">
+            <div className="w-[48px] h-[48px]">
+              <img
+                src="/images/power-1.jpeg"
+                className="w-full h-full object-cover rounded-[16px]"
+              />
             </div>
-            <p className="text-[16px] font-semibold">Jenny</p>
-            <p className="text-[12px] font-light">Sent you a voice message.</p>
+            <div className="flex flex-col justify-start items-start text-left w-full">
+              <p className="text-[16px] font-semibold">Jenny</p>
+              <p className="text-[12px] font-light">
+                Sent you a voice message.
+              </p>
+            </div>
           </div>
-          
         </div>
 
         {/*Chat Screen - Container*/}
