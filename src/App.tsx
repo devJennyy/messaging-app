@@ -15,6 +15,19 @@ function App() {
       <div className="flex flex-1 flex-row justify-between items-center w-full h-full bg-red-500">
         {/*Message Group - Container*/}
         <div className="flex flex-col justify-start items-start w-[500px] gap-10 bg-white">
+          <div>
+            <p>Chats</p>
+          </div>
+
+          <div>
+            <p>All Chats</p>
+            <p>CCE</p>
+          </div>
+
+          <div>
+            <p>Jenny</p>
+            <p>Sent you a voice message.</p>
+          </div>
           
         </div>
 
