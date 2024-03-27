@@ -19,14 +19,21 @@ function App() {
             <FaRegEdit />
           </div>
 
-          <div className="flex flex-row justify-between items-center text-[12px] bg-[#F5F5F5] w-[330px] h-[45px] rounded-[6px]">
-            <button className="bg-[#A53F38] w-[155px] h-[30px] text-white rounded-[8px]">All Chats</button>
-            <button className="">CCE</button>
+          <div className="flex flex-row justify-between items-center text-[12px] bg-[#F5F5F5] w-[420px] h-[55px] rounded-[8px] px-3">
+            <button className="bg-[#A53F38] w-[195px] h-[37px] text-white rounded-[6px]">
+              All Chats
+            </button>
+            <button className="hover:bg-[#A53F38] w-[195px] h-[37px] hover:text-white rounded-[6px]">
+              Groups
+            </button>
           </div>
 
-          <div>
-            <p>Jenny</p>
-            <p>Sent you a voice message.</p>
+          <div className="flex flex-col justify-start items-start text-left w-full">
+            <div className="w-[52px] h-[52px] rounded-[16px]">
+              <img src="/images/power-1.jpeg" className="w-full object-cover" />
+            </div>
+            <p className="text-[16px] font-semibold">Jenny</p>
+            <p className="text-[12px] font-light">Sent you a voice message.</p>
           </div>
           
         </div>
