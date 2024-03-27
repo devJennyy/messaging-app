@@ -15,50 +15,7 @@ function App() {
       <div className="flex flex-1 flex-row justify-between items-center w-full h-full bg-red-500">
         {/*Message Group - Container*/}
         <div className="flex flex-col justify-start items-start w-[500px] gap-10 bg-white">
-          <div className="flex flex-row justify-start items-center w-full">
-            <p className="text-[16px] font-medium text-[#323232] pr-4">
-              Recent Messages
-            </p>
-            <div className="flex flex-row justify-between items-center w-1/2">
-              <button className="hover:scale-95 transition-all">
-                <FaAngleDown />
-              </button>
-              <button className="hover:scale-95 transition-all">
-                <BiSolidEditAlt />
-              </button>
-            </div>
-          </div>
-
-          <div className="flex flex-row justify-between items-center px-2 bg-[#F5F5F5] w-[345px] h-[42px] rounded-[8px]">
-            <button className="flex flex-center justify-center items-center bg-[#F5F5F5] w-[163px] h-[30px] rounded-[6px] font-medium text-[12px] hover:text-white hover:bg-[#A53F38] hover:w-[163px] hover:h-[30px] hover:rounded-[6px] hover:scale-95 transition-all">
-              <p>All Chat</p>
-            </button>
-            <button className="flex flex-center justify-center items-center bg-[#F5F5F5] w-[163px] h-[30px] rounded-[6px] font-medium text-[12px] hover:text-white hover:bg-[#A53F38] hover:w-[163px] hover:h-[30px] hover:rounded-[6px] hover:scale-95 transition-all">
-              <p>Groups</p>
-            </button>
-          </div>
-
-          {/*Message Group - Chats*/}
-          <button className="flex flex-col w-full h-full hover:scale-95 transition-all">
-            <div className="flex flex-row justify-start items-start gap-4 w-[382px] h-[90px]">
-              <div className="w-[49px] h-[49px]">
-                <img
-                  src="/images/power-1.jpeg"
-                  className="w-full h-full object-center object-cover rounded-[16px]"
-                />
-              </div>
-
-              <div className="flex flex-1 flex-col justify-start items-start text-[#262626] h-[90px] text-left gap-2">
-                <div className="flex flex-row justify-start items-center gap-4">
-                  <p className="text-[14px] font-semi-bold">Power</p>
-                  <p className="text-[12px] font-extralight">9:30pm</p>
-                </div>
-                <p className="flex flex-1 text-[12px] w-[280px] font-light truncate">
-                  Sent you a voice message.
-                </p>
-              </div>
-            </div>
-          </button>
+          
         </div>
 
         {/*Chat Screen - Container*/}
@@ -321,7 +278,7 @@ function App() {
 
             {/*Chat Info - Media*/}
             <div>
-              <div className="flex flex-row justify-between items-center pt-5">
+              <div className="flex flex-row justify-between items-center pt-7">
                 <p className="text-[14px] text-[#323232]">Media</p>
                 <MdArrowForwardIos className="text-[12px] text-[#323232]" />
               </div>
@@ -385,7 +342,7 @@ function App() {
                   <div className="w-[374px] pt-2">
                     <img
                       src="/images/power-1.jpeg"
-                      className="w-full h-[130px] object-cover rounded-[7px]"
+                      className="w-full h-[120px] object-cover rounded-[7px]"
                     />
                   </div>
                 </div>
