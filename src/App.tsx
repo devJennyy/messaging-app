@@ -1,6 +1,5 @@
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaRegEdit } from "react-icons/fa";
 import "./App.css";
-import { BiSolidEditAlt } from "react-icons/bi";
 import { TbDotsVertical } from "react-icons/tb";
 import { BsEmojiWink } from "react-icons/bs";
 import { IoIosSend } from "react-icons/io";
@@ -14,14 +13,15 @@ function App() {
       {/*Main Container*/}
       <div className="flex flex-1 flex-row justify-between items-center w-full h-full bg-red-500">
         {/*Message Group - Container*/}
-        <div className="flex flex-col justify-start items-start w-[500px] gap-10 bg-white">
-          <div>
-            <p>Chats</p>
+        <div className="flex flex-col justify-center items-center w-[500px] gap-10 pt-10 px-10 bg-white">
+          <div className="flex flex-row justify-between items-center w-full">
+            <p className="text-[20px] font-medium">Chats</p>
+            <FaRegEdit />
           </div>
 
-          <div>
-            <p>All Chats</p>
-            <p>CCE</p>
+          <div className="flex flex-row justify-between items-center text-[12px] bg-[#F5F5F5] w-[330px] h-[45px] rounded-[6px]">
+            <button className="bg-[#A53F38] w-[155px] h-[30px] text-white rounded-[8px]">All Chats</button>
+            <button className="">CCE</button>
           </div>
 
           <div>
@@ -212,7 +212,7 @@ function App() {
         </div>
 
         {/*Chat Info*/}
-        <div className="flex flex-col items-center w-[450px] h-full bg-white pt-10 px-10 ">
+        <div className="flex flex-col items-center w-[450px] h-full bg-white pt-10 px-10">
           <div className="w-full">
             <div className="flex flex-col justify-center items-center">
               <div className="w-[134px] h-[134px] border-[6px] border-[#9C2B23] rounded-full">
