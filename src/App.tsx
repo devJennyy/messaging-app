@@ -1,4 +1,3 @@
-import { FaAngleDown, FaRegEdit } from "react-icons/fa";
 import "./App.css";
 import { TbDotsVertical } from "react-icons/tb";
 import { BsEmojiWink } from "react-icons/bs";
@@ -14,13 +13,15 @@ function App() {
       <div className="flex flex-1 flex-row justify-between items-center w-full h-full bg-red-500">
 
         {/*Message Group - Container*/}
-        <div className="flex flex-col items-center w-[500px] h-full bg-white pt-10 px-10">
-          <div className="flex flex-col w-full">
+        <div className="flex flex-col items-center w-[500px] h-full bg-white pt-10">
+          <div className="flex flex-col w-full px-10">
             <div className="flex flex-row justify-between items-center pb-10">
-              <p className="font-medium text-[16px] text-[#323232]">
+              <p className="font-medium text-[20px] text-[#323232]">
                 Recent Messages
               </p>
-              <FaRegEdit />
+              <button className="text-[20px] text-[#323232] hover:scale-[.9] transition-all">
+                <img src="/images/edit.svg" />
+              </button>
             </div>
 
             <div className="flex justify-between items-center px-3 bg-[#F5F5F5] w-[420px] h-[52px] rounded-[8px]">
@@ -31,12 +32,13 @@ function App() {
                 <p>Groups</p>
               </button>
             </div>
+          </div>
 
-            {/*Personal Message - Container*/}
-            <div className="flex flex-col h-[780px] overflow-y-auto">
-
-              {/*Personal Message 1*/}
-              <div className="flex flex-row justify-center items-center w-[420px] h-[88px] mt-5">
+          {/*Personal Message - Container*/}
+          <div className="flex justify-center items-center flex-col h-[780px] overflow-y-hidden pt-16">
+            {/*Personal Message 1*/}
+            <div className="hover:bg-[#F2F2F7] w-full px-10">
+              <button className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
                     src="/images/power-1.jpeg"
@@ -57,15 +59,17 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Sent you a voice message. 
+                        Sent you a voice message.
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </button>
+            </div>
 
-              {/*Personal Message 2*/}
-              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+            {/*Personal Message 2*/}
+            <div className="hover:bg-[#F2F2F7] w-full px-10">
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
                     src="/images/denji.jpeg"
@@ -98,9 +102,11 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/*Personal Message 3*/}
-              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+            {/*Personal Message 3*/}
+            <div className="hover:bg-[#F2F2F7] w-full px-10">
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
                     src="/images/yoru.jpeg"
@@ -127,9 +133,11 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/*Personal Message 4*/}
-              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+            {/*Personal Message 4*/}
+            <div className="hover:bg-[#F2F2F7] w-full px-10">
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
                     src="/images/makima.jpeg"
@@ -156,9 +164,11 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/*Personal Message 5*/}
-              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+            {/*Personal Message 5*/}
+            <div className="hover:bg-[#F2F2F7] w-full px-10">
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
                     src="/images/aki.jpeg"
@@ -191,9 +201,11 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/*Personal Message 6*/}
-              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+            {/*Personal Message 6*/}
+            <div className="hover:bg-[#F2F2F7] w-full px-10">
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
                     src="/images/himeno.jpeg"
@@ -214,7 +226,8 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Let's get drunk and have fun. But don't tell makima or she will k*ll us both!
+                        Let's get drunk and have fun. But don't tell makima or
+                        she will k*ll us both!
                       </p>
 
                       <div className="flex justify-end items-end">
@@ -226,9 +239,11 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/*Personal Message 7*/}
-              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+            {/*Personal Message 7*/}
+            <div className="hover:bg-[#F2F2F7] w-full px-10">
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
                     src="/images/pochi.jpeg"
@@ -255,9 +270,11 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/*Personal Message 8*/}
-              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+            {/*Personal Message 8*/}
+            <div className="hover:bg-[#F2F2F7] w-full px-10">
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
                     src="/images/angel-devil.jpeg"
@@ -290,9 +307,11 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/*Personal Message 9*/}
-              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+            {/*Personal Message 9*/}
+            <div className="hover:bg-[#F2F2F7] w-full px-10">
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px] hover:bg-[#F2F2F7]">
                 <div className="w-[52px]">
                   <img
                     src="/images/kobeni.jpeg"
@@ -324,8 +343,8 @@ function App() {
         </div>
 
         {/*Chat Screen - Container*/}
-        <div className="flex flex-col justify-center items-center w-[820px] p-5 bg-white">
-          <div className="flex flex-row justify-start items-center w-full gap-4  border-b-[1px] border-[#DEDCDC] pb-[15px]">
+        <div className="flex flex-col justify-center items-center w-[872px] h-full p-5 bg-white border-x-[1px] border-[#DEDCDC]">
+          <div className="flex flex-row justify-start items-center w-full gap-4 border-b-[1px] border-[#DEDCDC] pb-[15px]">
             <div className="w-[48px] h-[48px]">
               <img
                 src="/images/power-1.jpeg"
@@ -504,7 +523,7 @@ function App() {
         </div>
 
         {/*Chat Info - Container*/}
-        <div className="flex flex-col items-center w-[450px] h-full bg-white pt-10 px-10">
+        <div className="flex flex-col items-center w-[500px] h-full bg-white pt-10 px-10">
           <div className="w-full">
             <div className="flex flex-col justify-center items-center">
               <div className="w-[134px] h-[134px] border-[6px] border-[#9C2B23] rounded-full">
@@ -523,7 +542,9 @@ function App() {
             <div className="flex flex-col justify-center">
               <div className="flex flex-row justify-between items-center pt-28 text-[#323232]">
                 <p className="text-[14px] font-normal">Attachments</p>
-                <p className="text-[11px] font-normal underline">See all</p>
+                <button className="text-[11px] font-normal underline active:scale-[.900] transition-all">
+                  See all
+                </button>
               </div>
 
               <div className="flex flex-row justify-start items-center pt-2">
@@ -538,8 +559,12 @@ function App() {
                     </p>
                   </div>
                   <div className="flex flex-row justify-end absolute right-0 mr-16 items-end gap-3">
-                    <FiDownload className="text-[#71839B] text-[15px]" />
-                    <MdDelete className="text-[#A64039] text-[15px]" />
+                    <button className="active:scale-[.900] transition-all">
+                      <FiDownload className="text-[#71839B] text-[15px]" />
+                    </button>
+                    <button className="active:scale-[.900] transition-all">
+                      <MdDelete className="text-[#A64039] text-[15px]" />
+                    </button>
                   </div>
                 </div>
               </div>
@@ -556,8 +581,12 @@ function App() {
                     </p>
                   </div>
                   <div className="flex flex-row justify-end absolute right-0 mr-16 items-end gap-3">
-                    <FiDownload className="text-[#71839B] text-[15px]" />
-                    <MdDelete className="text-[#A64039] text-[15px]" />
+                    <button className="active:scale-[.900] transition-all">
+                      <FiDownload className="text-[#71839B] text-[15px]" />
+                    </button>
+                    <button className="active:scale-[.900] transition-all">
+                      <MdDelete className="text-[#A64039] text-[15px]" />
+                    </button>
                   </div>
                 </div>
               </div>
@@ -574,41 +603,74 @@ function App() {
                     </p>
                   </div>
                   <div className="flex flex-row justify-end absolute right-0 mr-16 items-end gap-3">
-                    <FiDownload className="text-[#71839B] text-[15px]" />
-                    <MdDelete className="text-[#A64039] text-[15px]" />
+                    <button className="active:scale-[.900] transition-all">
+                      <FiDownload className="text-[#71839B] text-[15px]" />
+                    </button>
+                    <button className="active:scale-[.900] transition-all">
+                      <MdDelete className="text-[#A64039] text-[15px]" />
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
 
             {/*Chat Info - Media*/}
-            <div>
+            <div className="w-full">
               <div className="flex flex-row justify-between items-center pt-7">
                 <p className="text-[14px] text-[#323232]">Media</p>
-                <MdArrowForwardIos className="text-[12px] text-[#323232]" />
+                <button className="active:scale-[.920] transition-all">
+                  <MdArrowForwardIos className="text-[12px] text-[#323232]" />
+                </button>
               </div>
 
               <div className="flex flex-col justify-center items-center">
                 <div className="flex flex-row justify-center items-center gap-1">
-                  <div className="w-[90px] pt-2">
+                  <button className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
                       src="/images/power-1.jpeg"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
-                  </div>
-                  <div className="w-[90px] pt-2">
+                  </button>
+                  <button className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
                       src="/images/power-2.jpeg"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
-                  </div>
-                  <div className="w-[90px] pt-2">
+                  </button>
+                  <button className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
                       src="/images/power-3.jpeg"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
-                  </div>
-                  <div className="w-[90px] pt-2">
+                  </button>
+                  <button className="w-[101px] pt-2 active:scale-95 transition-all">
+                    <img
+                      src="/images/power-4.jpeg"
+                      className="w-full h-[90px] object-cover rounded-[7px]"
+                    />
+                  </button>
+                </div>
+
+                <div className="flex flex-row justify-center items-center gap-1 mt-[-4px]">
+                  <button className="w-[101px] pt-2 active:scale-95 transition-all">
+                    <img
+                      src="/images/power-1.jpeg"
+                      className="w-full h-[90px] object-cover rounded-[7px]"
+                    />
+                  </button>
+                  <button className="w-[101px] pt-2 active:scale-95 transition-all">
+                    <img
+                      src="/images/power-2.jpeg"
+                      className="w-full h-[90px] object-cover rounded-[7px]"
+                    />
+                  </button>
+                  <button className="w-[101px] pt-2 active:scale-95 transition-all">
+                    <img
+                      src="/images/power-3.jpeg"
+                      className="w-full h-[90px] object-cover rounded-[7px]"
+                    />
+                  </button>
+                  <div className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
                       src="/images/power-4.jpeg"
                       className="w-full h-[90px] object-cover rounded-[7px]"
@@ -617,39 +679,12 @@ function App() {
                 </div>
 
                 <div className="flex flex-row justify-center items-center gap-1 mt-[-4px]">
-                  <div className="w-[90px] pt-2">
-                    <img
-                      src="/images/power-1.jpeg"
-                      className="w-full h-[90px] object-cover rounded-[7px]"
-                    />
-                  </div>
-                  <div className="w-[90px] pt-2">
-                    <img
-                      src="/images/power-2.jpeg"
-                      className="w-full h-[90px] object-cover rounded-[7px]"
-                    />
-                  </div>
-                  <div className="w-[90px] pt-2">
-                    <img
-                      src="/images/power-3.jpeg"
-                      className="w-full h-[90px] object-cover rounded-[7px]"
-                    />
-                  </div>
-                  <div className="w-[90px] pt-2">
-                    <img
-                      src="/images/power-4.jpeg"
-                      className="w-full h-[90px] object-cover rounded-[7px]"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex flex-row justify-center items-center gap-1 mt-[-4px]">
-                  <div className="w-[374px] pt-2">
+                  <button className="w-[418px] pt-2 active:scale-95 transition-all">
                     <img
                       src="/images/power-1.jpeg"
                       className="w-full h-[120px] object-cover rounded-[7px]"
                     />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
