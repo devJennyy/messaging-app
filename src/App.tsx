@@ -59,12 +59,6 @@ function App() {
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
                         Sent you a voice message. 
                       </p>
-
-                      <div className="flex justify-end items-end">
-                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
-                          <p>2</p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -74,7 +68,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
                 <div className="w-[52px]">
                   <img
-                    src="/images/power-1.jpeg"
+                    src="/images/denji.jpeg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -82,7 +76,7 @@ function App() {
                 <div className="flex flex-1 flex-col justify-start w-full pl-4">
                   <div className="flex flex-row justify-between items-center">
                     <p className="text-[16px] font-semibold text-[#323232]">
-                      Power
+                      Denji
                     </p>
                     <p className="text-[13px] font-extralight text-[#323232] ">
                       9:30 PM
@@ -92,7 +86,7 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Sent you a voice message.
+                        Nice. See you soon!
                       </p>
 
                       <div className="flex justify-end items-end">
@@ -109,7 +103,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
                 <div className="w-[52px]">
                   <img
-                    src="/images/power-1.jpeg"
+                    src="/images/yoru.jpeg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -117,7 +111,7 @@ function App() {
                 <div className="flex flex-1 flex-col justify-start w-full pl-4">
                   <div className="flex flex-row justify-between items-center">
                     <p className="text-[16px] font-semibold text-[#323232]">
-                      Power
+                      Yoru
                     </p>
                     <p className="text-[13px] font-extralight text-[#323232] ">
                       9:30 PM
@@ -127,14 +121,8 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Sent you a voice message. 
+                        Let's go tomorrow!
                       </p>
-
-                      <div className="flex justify-end items-end">
-                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
-                          <p>2</p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -144,7 +132,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
                 <div className="w-[52px]">
                   <img
-                    src="/images/power-1.jpeg"
+                    src="/images/makima.jpeg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -152,7 +140,7 @@ function App() {
                 <div className="flex flex-1 flex-col justify-start w-full pl-4">
                   <div className="flex flex-row justify-between items-center">
                     <p className="text-[16px] font-semibold text-[#323232]">
-                      Power
+                      Makima
                     </p>
                     <p className="text-[13px] font-extralight text-[#323232] ">
                       9:30 PM
@@ -162,14 +150,8 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Sent you a voice message.
+                        I'm coming over.
                       </p>
-
-                      <div className="flex justify-end items-end">
-                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
-                          <p>2</p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -179,7 +161,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
                 <div className="w-[52px]">
                   <img
-                    src="/images/power-1.jpeg"
+                    src="/images/aki.jpeg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -187,7 +169,7 @@ function App() {
                 <div className="flex flex-1 flex-col justify-start w-full pl-4">
                   <div className="flex flex-row justify-between items-center">
                     <p className="text-[16px] font-semibold text-[#323232]">
-                      Power
+                      Aki
                     </p>
                     <p className="text-[13px] font-extralight text-[#323232] ">
                       9:30 PM
@@ -197,7 +179,7 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Sent you a voice message.
+                        I miss you!
                       </p>
 
                       <div className="flex justify-end items-end">
@@ -214,7 +196,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
                 <div className="w-[52px]">
                   <img
-                    src="/images/power-1.jpeg"
+                    src="/images/himeno.jpeg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -222,7 +204,7 @@ function App() {
                 <div className="flex flex-1 flex-col justify-start w-full pl-4">
                   <div className="flex flex-row justify-between items-center">
                     <p className="text-[16px] font-semibold text-[#323232]">
-                      Power
+                      Himeno
                     </p>
                     <p className="text-[13px] font-extralight text-[#323232] ">
                       9:30 PM
@@ -232,7 +214,7 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Sent you a voice message.
+                        Your cat is with me!
                       </p>
 
                       <div className="flex justify-end items-end">
@@ -249,7 +231,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
                 <div className="w-[52px]">
                   <img
-                    src="/images/power-1.jpeg"
+                    src="/images/pochi.jpeg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -257,7 +239,7 @@ function App() {
                 <div className="flex flex-1 flex-col justify-start w-full pl-4">
                   <div className="flex flex-row justify-between items-center">
                     <p className="text-[16px] font-semibold text-[#323232]">
-                      Power
+                      Pochi
                     </p>
                     <p className="text-[13px] font-extralight text-[#323232] ">
                       9:30 PM
@@ -267,14 +249,8 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Sent you a voice message.
+                        I'm playing with your cat!
                       </p>
-
-                      <div className="flex justify-end items-end">
-                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
-                          <p>2</p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -284,7 +260,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
                 <div className="w-[52px]">
                   <img
-                    src="/images/power-1.jpeg"
+                    src="/images/angel-devil.jpeg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -292,7 +268,7 @@ function App() {
                 <div className="flex flex-1 flex-col justify-start w-full pl-4">
                   <div className="flex flex-row justify-between items-center">
                     <p className="text-[16px] font-semibold text-[#323232]">
-                      Power
+                      Angel Devil
                     </p>
                     <p className="text-[13px] font-extralight text-[#323232] ">
                       9:30 PM
@@ -302,7 +278,7 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Sent you a voice message. 
+                        Don't touch me!
                       </p>
 
                       <div className="flex justify-end items-end">
@@ -319,7 +295,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
                 <div className="w-[52px]">
                   <img
-                    src="/images/power-1.jpeg"
+                    src="/images/kobeni.jpeg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -327,7 +303,7 @@ function App() {
                 <div className="flex flex-1 flex-col justify-start w-full pl-4">
                   <div className="flex flex-row justify-between items-center">
                     <p className="text-[16px] font-semibold text-[#323232]">
-                      Power
+                      Kobeni
                     </p>
                     <p className="text-[13px] font-extralight text-[#323232] ">
                       9:30 PM
@@ -337,21 +313,12 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Sent you a voice message.
+                        She's so scaryyyyyyyyyy!
                       </p>
-
-                      <div className="flex justify-end items-end">
-                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
-                          <p>2</p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-
-
             </div>
           </div>
         </div>
