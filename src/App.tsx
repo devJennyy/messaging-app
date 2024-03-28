@@ -179,7 +179,7 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        I miss you!
+                        Okay.
                       </p>
 
                       <div className="flex justify-end items-end">
@@ -214,7 +214,7 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Your cat is with me!
+                        Let's get drunk and have fun. But don't tell makima or she will k*ll us both!
                       </p>
 
                       <div className="flex justify-end items-end">
@@ -249,7 +249,7 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        I'm playing with your cat!
+                        Grrrrr . . .
                       </p>
                     </div>
                   </div>
@@ -278,7 +278,7 @@ function App() {
                   <div className="flex flex-1 justify-between items-center">
                     <div className="flex flex-1 justify-between items-center">
                       <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
-                        Don't touch me!
+                        Don't touch me.
                       </p>
 
                       <div className="flex justify-end items-end">
