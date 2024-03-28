@@ -13,33 +13,51 @@ function App() {
       {/*Main Container*/}
       <div className="flex flex-1 flex-row justify-between items-center w-full h-full bg-red-500">
         {/*Message Group - Container*/}
-        <div className="flex flex-col justify-center items-center w-[500px] gap-10 pt-10 px-10 bg-white">
-          <div className="flex flex-row justify-between items-center w-full">
-            <p className="text-[20px] font-medium">Chats</p>
-            <FaRegEdit />
-          </div>
-
-          <div className="flex flex-row justify-between items-center text-[12px] bg-[#F5F5F5] w-[420px] h-[55px] rounded-[8px] px-3">
-            <button className="bg-[#A53F38] w-[195px] h-[37px] text-white rounded-[6px]">
-              All Chats
-            </button>
-            <button className="hover:bg-[#A53F38] w-[195px] h-[37px] hover:text-white rounded-[6px]">
-              Groups
-            </button>
-          </div>
-
-          <div className="flex flex-row justify-start items-center w-full">
-            <div className="w-[48px] h-[48px]">
-              <img
-                src="/images/power-1.jpeg"
-                className="w-full h-full object-cover rounded-[16px]"
-              />
+        <div className="flex flex-col items-center w-[500px] bg-white pt-10 px-10">
+          <div className="w-full">
+            <div className="flex flex-row justify-between items-center pb-10">
+              <p>Recent Messages</p>
+              <FaRegEdit />
             </div>
-            <div className="flex flex-col justify-start items-start text-left w-full">
-              <p className="text-[16px] font-semibold">Jenny</p>
-              <p className="text-[12px] font-light">
-                Sent you a voice message.
-              </p>
+
+            <div className="flex justify-between items-center px-3 bg-[#F5F5F5] w-[420px] h-[52px] rounded-[8px]">
+              <button className="flex flex-row justify-center items-center bg-[#9C2B23] w-[193px] h-[33px] text-white text-[14px] rounded-[6px] hover:scale-95 transition-all">
+                <p>All Chats</p>
+              </button>
+              <button className="flex flex-row justify-center items-center hover:bg-[#9C2B23] w-[193px] h-[33px] hover:text-white text-[14px] rounded-[6px] hover:scale-95 transition-all">
+                <p>Groups</p>
+              </button>
+            </div>
+
+            <div className="flex flex-row justify-center items-center w-[420px] h-[100px] bg-[#F2F2F7] mt-5">
+              <div className="w-[52px]">
+                <img
+                  src="/images/power-1.jpeg"
+                  className="w-full h-[52px] rounded-[10px] object-cover"
+                />
+              </div>
+
+              <div className="flex flex-1 flex-col justify-start w-full pl-4">
+                <div className="flex flex-row justify-between items-center">
+                  <p className="text-[16px] font-semibold text-[#323232]">
+                    Power
+                  </p>
+                  <p className="text-[12px] font-extralight text-[#323232] ">
+                    9:30 PM
+                  </p>
+                </div>
+
+                <div className="flex justify-start items-start">
+                  <p className="text-[12px]">Sent you a voice message</p>
+                </div>
+
+                <div>
+                  <div className="flex flex-1 justify-center items-center bg-[#9C2B23] text-white text-[12px] w-fit rounded-full aspect-square text-right">
+                    <p>2</p>
+                  </div>
+                </div>
+                
+              </div>
             </div>
           </div>
         </div>
@@ -224,7 +242,7 @@ function App() {
           </div>
         </div>
 
-        {/*Chat Info*/}
+        {/*Chat Info - Container*/}
         <div className="flex flex-col items-center w-[450px] h-full bg-white pt-10 px-10">
           <div className="w-full">
             <div className="flex flex-col justify-center items-center">
