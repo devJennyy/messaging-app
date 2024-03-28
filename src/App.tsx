@@ -12,11 +12,14 @@ function App() {
     <>
       {/*Main Container*/}
       <div className="flex flex-1 flex-row justify-between items-center w-full h-full bg-red-500">
+
         {/*Message Group - Container*/}
-        <div className="flex flex-col items-center w-[500px] bg-white pt-10 px-10">
-          <div className="w-full">
+        <div className="flex flex-col items-center w-[500px] h-full bg-white pt-10 px-10">
+          <div className="flex flex-col w-full">
             <div className="flex flex-row justify-between items-center pb-10">
-              <p>Recent Messages</p>
+              <p className="font-medium text-[16px] text-[#323232]">
+                Recent Messages
+              </p>
               <FaRegEdit />
             </div>
 
@@ -29,41 +32,326 @@ function App() {
               </button>
             </div>
 
-            <div className="flex flex-row justify-center items-center w-[420px] h-[100px]  mt-5">
-              <div className="w-[52px]">
-                <img
-                  src="/images/power-1.jpeg"
-                  className="w-full h-[53px] rounded-[10px] object-cover"
-                />
-              </div>
+            {/*Personal Message - Container*/}
+            <div className="flex flex-col h-[780px] overflow-y-auto">
 
-              <div className="flex flex-1 flex-col justify-start w-full pl-4">
-                <div className="flex flex-row justify-between items-center">
-                  <p className="text-[16px] font-semibold text-[#323232]">
-                    Power
-                  </p>
-                  <p className="text-[13px] font-extralight text-[#323232] ">
-                    9:30 PM
-                  </p>
+              {/*Personal Message 1*/}
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px] mt-5">
+                <div className="w-[52px]">
+                  <img
+                    src="/images/power-1.jpeg"
+                    className="w-full h-[53px] rounded-[10px] object-cover"
+                  />
                 </div>
 
-                <div className="flex flex-1 justify-between items-center">
-                  <div className="flex flex-1 justify-between items-center">
-                    <p className="text-left text-[12px] text-[#323232] w-[290px] line-clamp-2">
-                      Lorem ipsum dolor, sit amet consectetur adipis elit.
-                      Fugiat facilis, a rem incidunt voluptas commodi, iste
-                      aliquid exercitationem corporis error est cumque delectus
-                      minima magni dolor. At nam perferendis aspernatur?
+                <div className="flex flex-1 flex-col justify-start w-full pl-4">
+                  <div className="flex flex-row justify-between items-center">
+                    <p className="text-[16px] font-semibold text-[#323232]">
+                      Power
                     </p>
+                    <p className="text-[13px] font-extralight text-[#323232] ">
+                      9:30 PM
+                    </p>
+                  </div>
 
-                    <div className="flex justify-end items-end">
-                      <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
-                        <p>2</p>
+                  <div className="flex flex-1 justify-between items-center">
+                    <div className="flex flex-1 justify-between items-center">
+                      <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
+                        Sent you a voice message. 
+                      </p>
+
+                      <div className="flex justify-end items-end">
+                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
+                          <p>2</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              {/*Personal Message 2*/}
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+                <div className="w-[52px]">
+                  <img
+                    src="/images/power-1.jpeg"
+                    className="w-full h-[53px] rounded-[10px] object-cover"
+                  />
+                </div>
+
+                <div className="flex flex-1 flex-col justify-start w-full pl-4">
+                  <div className="flex flex-row justify-between items-center">
+                    <p className="text-[16px] font-semibold text-[#323232]">
+                      Power
+                    </p>
+                    <p className="text-[13px] font-extralight text-[#323232] ">
+                      9:30 PM
+                    </p>
+                  </div>
+
+                  <div className="flex flex-1 justify-between items-center">
+                    <div className="flex flex-1 justify-between items-center">
+                      <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
+                        Sent you a voice message.
+                      </p>
+
+                      <div className="flex justify-end items-end">
+                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
+                          <p>2</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*Personal Message 3*/}
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+                <div className="w-[52px]">
+                  <img
+                    src="/images/power-1.jpeg"
+                    className="w-full h-[53px] rounded-[10px] object-cover"
+                  />
+                </div>
+
+                <div className="flex flex-1 flex-col justify-start w-full pl-4">
+                  <div className="flex flex-row justify-between items-center">
+                    <p className="text-[16px] font-semibold text-[#323232]">
+                      Power
+                    </p>
+                    <p className="text-[13px] font-extralight text-[#323232] ">
+                      9:30 PM
+                    </p>
+                  </div>
+
+                  <div className="flex flex-1 justify-between items-center">
+                    <div className="flex flex-1 justify-between items-center">
+                      <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
+                        Sent you a voice message. 
+                      </p>
+
+                      <div className="flex justify-end items-end">
+                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
+                          <p>2</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*Personal Message 4*/}
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+                <div className="w-[52px]">
+                  <img
+                    src="/images/power-1.jpeg"
+                    className="w-full h-[53px] rounded-[10px] object-cover"
+                  />
+                </div>
+
+                <div className="flex flex-1 flex-col justify-start w-full pl-4">
+                  <div className="flex flex-row justify-between items-center">
+                    <p className="text-[16px] font-semibold text-[#323232]">
+                      Power
+                    </p>
+                    <p className="text-[13px] font-extralight text-[#323232] ">
+                      9:30 PM
+                    </p>
+                  </div>
+
+                  <div className="flex flex-1 justify-between items-center">
+                    <div className="flex flex-1 justify-between items-center">
+                      <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
+                        Sent you a voice message.
+                      </p>
+
+                      <div className="flex justify-end items-end">
+                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
+                          <p>2</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*Personal Message 5*/}
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+                <div className="w-[52px]">
+                  <img
+                    src="/images/power-1.jpeg"
+                    className="w-full h-[53px] rounded-[10px] object-cover"
+                  />
+                </div>
+
+                <div className="flex flex-1 flex-col justify-start w-full pl-4">
+                  <div className="flex flex-row justify-between items-center">
+                    <p className="text-[16px] font-semibold text-[#323232]">
+                      Power
+                    </p>
+                    <p className="text-[13px] font-extralight text-[#323232] ">
+                      9:30 PM
+                    </p>
+                  </div>
+
+                  <div className="flex flex-1 justify-between items-center">
+                    <div className="flex flex-1 justify-between items-center">
+                      <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
+                        Sent you a voice message.
+                      </p>
+
+                      <div className="flex justify-end items-end">
+                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
+                          <p>2</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*Personal Message 6*/}
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+                <div className="w-[52px]">
+                  <img
+                    src="/images/power-1.jpeg"
+                    className="w-full h-[53px] rounded-[10px] object-cover"
+                  />
+                </div>
+
+                <div className="flex flex-1 flex-col justify-start w-full pl-4">
+                  <div className="flex flex-row justify-between items-center">
+                    <p className="text-[16px] font-semibold text-[#323232]">
+                      Power
+                    </p>
+                    <p className="text-[13px] font-extralight text-[#323232] ">
+                      9:30 PM
+                    </p>
+                  </div>
+
+                  <div className="flex flex-1 justify-between items-center">
+                    <div className="flex flex-1 justify-between items-center">
+                      <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
+                        Sent you a voice message.
+                      </p>
+
+                      <div className="flex justify-end items-end">
+                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
+                          <p>2</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*Personal Message 7*/}
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+                <div className="w-[52px]">
+                  <img
+                    src="/images/power-1.jpeg"
+                    className="w-full h-[53px] rounded-[10px] object-cover"
+                  />
+                </div>
+
+                <div className="flex flex-1 flex-col justify-start w-full pl-4">
+                  <div className="flex flex-row justify-between items-center">
+                    <p className="text-[16px] font-semibold text-[#323232]">
+                      Power
+                    </p>
+                    <p className="text-[13px] font-extralight text-[#323232] ">
+                      9:30 PM
+                    </p>
+                  </div>
+
+                  <div className="flex flex-1 justify-between items-center">
+                    <div className="flex flex-1 justify-between items-center">
+                      <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
+                        Sent you a voice message.
+                      </p>
+
+                      <div className="flex justify-end items-end">
+                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
+                          <p>2</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*Personal Message 8*/}
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+                <div className="w-[52px]">
+                  <img
+                    src="/images/power-1.jpeg"
+                    className="w-full h-[53px] rounded-[10px] object-cover"
+                  />
+                </div>
+
+                <div className="flex flex-1 flex-col justify-start w-full pl-4">
+                  <div className="flex flex-row justify-between items-center">
+                    <p className="text-[16px] font-semibold text-[#323232]">
+                      Power
+                    </p>
+                    <p className="text-[13px] font-extralight text-[#323232] ">
+                      9:30 PM
+                    </p>
+                  </div>
+
+                  <div className="flex flex-1 justify-between items-center">
+                    <div className="flex flex-1 justify-between items-center">
+                      <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
+                        Sent you a voice message. 
+                      </p>
+
+                      <div className="flex justify-end items-end">
+                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
+                          <p>2</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*Personal Message 9*/}
+              <div className="flex flex-row justify-center items-center w-[420px] h-[88px]">
+                <div className="w-[52px]">
+                  <img
+                    src="/images/power-1.jpeg"
+                    className="w-full h-[53px] rounded-[10px] object-cover"
+                  />
+                </div>
+
+                <div className="flex flex-1 flex-col justify-start w-full pl-4">
+                  <div className="flex flex-row justify-between items-center">
+                    <p className="text-[16px] font-semibold text-[#323232]">
+                      Power
+                    </p>
+                    <p className="text-[13px] font-extralight text-[#323232] ">
+                      9:30 PM
+                    </p>
+                  </div>
+
+                  <div className="flex flex-1 justify-between items-center">
+                    <div className="flex flex-1 justify-between items-center">
+                      <p className="text-left text-[12px] pt-1 text-[#323232] w-[290px] h-[35px] line-clamp-2">
+                        Sent you a voice message.
+                      </p>
+
+                      <div className="flex justify-end items-end">
+                        <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
+                          <p>2</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
             </div>
           </div>
         </div>
