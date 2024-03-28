@@ -29,11 +29,11 @@ function App() {
               </button>
             </div>
 
-            <div className="flex flex-row justify-center items-center w-[420px] h-[100px] bg-[#F2F2F7] mt-5">
+            <div className="flex flex-row justify-center items-center w-[420px] h-[100px]  mt-5">
               <div className="w-[52px]">
                 <img
                   src="/images/power-1.jpeg"
-                  className="w-full h-[52px] rounded-[10px] object-cover"
+                  className="w-full h-[53px] rounded-[10px] object-cover"
                 />
               </div>
 
@@ -42,21 +42,27 @@ function App() {
                   <p className="text-[16px] font-semibold text-[#323232]">
                     Power
                   </p>
-                  <p className="text-[12px] font-extralight text-[#323232] ">
+                  <p className="text-[13px] font-extralight text-[#323232] ">
                     9:30 PM
                   </p>
                 </div>
 
-                <div className="flex justify-start items-start">
-                  <p className="text-[12px]">Sent you a voice message</p>
-                </div>
+                <div className="flex flex-1 justify-between items-center">
+                  <div className="flex flex-1 justify-between items-center">
+                    <p className="text-left text-[12px] text-[#323232] w-[290px] line-clamp-2">
+                      Lorem ipsum dolor, sit amet consectetur adipis elit.
+                      Fugiat facilis, a rem incidunt voluptas commodi, iste
+                      aliquid exercitationem corporis error est cumque delectus
+                      minima magni dolor. At nam perferendis aspernatur?
+                    </p>
 
-                <div>
-                  <div className="flex flex-1 justify-center items-center bg-[#9C2B23] text-white text-[12px] w-fit rounded-full aspect-square text-right">
-                    <p>2</p>
+                    <div className="flex justify-end items-end">
+                      <div className="flex justify-center items-center bg-[#9C2B23] text-white text-[12px] w-5 rounded-full aspect-square">
+                        <p>2</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
