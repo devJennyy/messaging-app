@@ -1,6 +1,17 @@
-# Interactive Messaging App
+# Messaging App
+Static website for a messaging app https://messaging-app-devjenny.vercel.app
 
-This current User Interface is responsive only for web viewing. I will be implementing the mobile responsiveness in the next update. Stay tuned!
+
+## Tech Used
+- React
+- TailwindCSS
+
+<br>
 
 ![image](https://github.com/devJennyy/messaging-app/assets/135243946/dc8a126e-6853-4948-93b0-5a198b42dbb1)
 
+
+***
+
+<br>
+<p align="center">☕ Developed by <a href="https://linktree-jenny.vercel.app/">Jenny Pieloor</a></p>
