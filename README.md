@@ -2,7 +2,7 @@
 Static website for a messaging app https://messaging-app-devjenny.vercel.app
 
 ## Available Screen Sizes
-- 1920 pixels width (desktop/laptop)
+- 1080p 
 
 ## Tech Used
 - React
