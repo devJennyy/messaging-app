@@ -10,10 +10,9 @@ function App() {
   return (
     <>
       {/*Main Container*/}
-      <div className="flex flex-1 flex-row justify-between items-center w-full h-full bg-red-500">
-
+      <div className="flex flex-1 flex-row justify-between items-center w-full h-ful">
         {/*Message Group - Container*/}
-        <div className="flex flex-col items-center w-[500px] h-full bg-white pt-10">
+        <div className="flex flex-col items-center w-[500px] h-full bg-white pt-8">
           <div className="flex flex-col w-full px-10">
             <div className="flex flex-row justify-between items-center pb-10">
               <p className="font-medium text-[20px] text-[#323232]">
@@ -41,7 +40,7 @@ function App() {
               <button className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
-                    src="/images/power-1.jpeg"
+                    src="/images/power.jpg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -72,7 +71,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
-                    src="/images/denji.jpeg"
+                    src="/images/denji.jpg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -109,7 +108,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
-                    src="/images/yoru.jpeg"
+                    src="/images/yoru.jpg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -140,7 +139,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
-                    src="/images/makima.jpeg"
+                    src="/images/makima.jpg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -171,7 +170,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
-                    src="/images/aki.jpeg"
+                    src="/images/aki.jpg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -208,7 +207,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
-                    src="/images/himeno.jpeg"
+                    src="/images/himeno.jpg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -246,7 +245,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
-                    src="/images/pochi.jpeg"
+                    src="/images/pochi.jpg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -277,7 +276,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px] active:scale-[.920] transition-all">
                 <div className="w-[52px]">
                   <img
-                    src="/images/angel-devil.jpeg"
+                    src="/images/angel-devil.jpg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -314,7 +313,7 @@ function App() {
               <div className="flex flex-row justify-center items-center w-[420px] h-[88px] hover:bg-[#F2F2F7]">
                 <div className="w-[52px]">
                   <img
-                    src="/images/kobeni.jpeg"
+                    src="/images/kobeni.jpg"
                     className="w-full h-[53px] rounded-[10px] object-cover"
                   />
                 </div>
@@ -343,11 +342,11 @@ function App() {
         </div>
 
         {/*Chat Screen - Container*/}
-        <div className="flex flex-col justify-center items-center w-[872px] h-full p-5 bg-white border-x-[1px] border-[#DEDCDC]">
+        <div className="flex flex-col justify-center items-center w-fit h-full px-5 bg-white border-x-[1px] border-[#DEDCDC]">
           <div className="flex flex-row justify-start items-center w-full gap-4 border-b-[1px] border-[#DEDCDC] pb-[15px]">
             <div className="w-[48px] h-[48px]">
               <img
-                src="/images/power-1.jpeg"
+                src="/images/power.jpg"
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
@@ -457,7 +456,7 @@ function App() {
             </div>
 
             {/*Chat Screen - Messages - Voice Recording (Sender)*/}
-            <div className="flex flex-col justify-start items-start pt2 pl-4">
+            <div className="flex flex-col justify-start items-start pt-2 pl-4">
               <div className="pl-2">
                 <div className="flex justify-center items-center px-2">
                   <img src="/images/voice-recording.png" />
@@ -528,7 +527,7 @@ function App() {
             <div className="flex flex-col justify-center items-center">
               <div className="w-[134px] h-[134px] border-[6px] border-[#9C2B23] rounded-full">
                 <img
-                  src="/images/power-1.jpeg"
+                  src="/images/power.jpg"
                   className="w-full h-full object-cover rounded-full border-[5px] border-white"
                 />
                 <div className="text-[#535353] pt-5">
@@ -547,18 +546,20 @@ function App() {
                 </button>
               </div>
 
-              <div className="flex flex-row justify-start items-center pt-2">
-                <div className="flex flex-row justify-start items-center bg-[#F8F7F7] w-[430px] h-[70px] gap-4 pl-5">
-                  <img src="/images/pdf-file-icon.png" />
-                  <div className="flex flex-col justify-start items-start gap-2">
-                    <p className="text-[12px] font-medium text-[#324054]">
-                      File Title.pdf
-                    </p>
-                    <p className="text-[10px] font-regular text-[#71839B]">
-                      313 KB . 22 Dec, 2022
-                    </p>
+              <div className="flex flex-col gap-2 mt-3">
+                <div className="flex flex-row justify-between items-center bg-[#F8F7F7] w-[420px] h-[70px] px-5">
+                  <div className="flex flex-row justify-center items-center gap-5">
+                    <img src="/images/pdf-file-icon.png" />
+                    <div className="flex flex-col justify-start items-start gap-2">
+                      <p className="text-[12px] font-medium text-[#324054]">
+                        File Title.pdf
+                      </p>
+                      <p className="text-[10px] font-regular text-[#71839B]">
+                        313 KB . 22 Dec, 2022
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex flex-row justify-end absolute right-0 mr-16 items-end gap-3">
+                  <div className="flex flex-row justify-end items-end gap-3">
                     <button className="active:scale-[.900] transition-all">
                       <FiDownload className="text-[#71839B] text-[15px]" />
                     </button>
@@ -567,20 +568,20 @@ function App() {
                     </button>
                   </div>
                 </div>
-              </div>
 
-              <div className="flex flex-row justify-start items-center pt-2">
-                <div className="flex flex-row justify-start items-center bg-[#F8F7F7] w-[430px] h-[70px] gap-4 pl-5">
-                  <img src="/images/pdf-file-icon.png" />
-                  <div className="flex flex-col justify-start items-start gap-2">
-                    <p className="text-[12px] font-medium text-[#324054]">
-                      File Title.pdf
-                    </p>
-                    <p className="text-[10px] font-regular text-[#71839B]">
-                      313 KB . 22 Dec, 2022
-                    </p>
+                <div className="flex flex-row justify-between items-center bg-[#F8F7F7] w-[420px] h-[70px] px-5">
+                  <div className="flex flex-row justify-center items-center gap-5">
+                    <img src="/images/pdf-file-icon.png" />
+                    <div className="flex flex-col justify-start items-start gap-2">
+                      <p className="text-[12px] font-medium text-[#324054]">
+                        File Title.pdf
+                      </p>
+                      <p className="text-[10px] font-regular text-[#71839B]">
+                        313 KB . 22 Dec, 2022
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex flex-row justify-end absolute right-0 mr-16 items-end gap-3">
+                  <div className="flex flex-row justify-end items-end gap-3">
                     <button className="active:scale-[.900] transition-all">
                       <FiDownload className="text-[#71839B] text-[15px]" />
                     </button>
@@ -589,20 +590,20 @@ function App() {
                     </button>
                   </div>
                 </div>
-              </div>
 
-              <div className="flex flex-row justify-start items-center pt-2">
-                <div className="flex flex-row justify-start items-center bg-[#F8F7F7] w-[430px] h-[70px] gap-4 pl-5">
-                  <img src="/images/pdf-file-icon.png" />
-                  <div className="flex flex-col justify-start items-start gap-2">
-                    <p className="text-[12px] font-medium text-[#324054]">
-                      File Title.pdf
-                    </p>
-                    <p className="text-[10px] font-regular text-[#71839B]">
-                      313 KB . 22 Dec, 2022
-                    </p>
+                <div className="flex flex-row justify-between items-center bg-[#F8F7F7] w-[420px] h-[70px] px-5">
+                  <div className="flex flex-row justify-center items-center gap-5">
+                    <img src="/images/pdf-file-icon.png" />
+                    <div className="flex flex-col justify-start items-start gap-2">
+                      <p className="text-[12px] font-medium text-[#324054]">
+                        File Title.pdf
+                      </p>
+                      <p className="text-[10px] font-regular text-[#71839B]">
+                        313 KB . 22 Dec, 2022
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex flex-row justify-end absolute right-0 mr-16 items-end gap-3">
+                  <div className="flex flex-row justify-end items-end gap-3">
                     <button className="active:scale-[.900] transition-all">
                       <FiDownload className="text-[#71839B] text-[15px]" />
                     </button>
@@ -627,25 +628,25 @@ function App() {
                 <div className="flex flex-row justify-center items-center gap-1">
                   <button className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
-                      src="/images/power-1.jpeg"
+                      src="/images/power-1.gif"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
                   </button>
                   <button className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
-                      src="/images/power-2.jpeg"
+                      src="/images/power-2.gif"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
                   </button>
                   <button className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
-                      src="/images/power-3.jpeg"
+                      src="/images/power-3.gif"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
                   </button>
                   <button className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
-                      src="/images/power-4.jpeg"
+                      src="/images/power-4.gif"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
                   </button>
@@ -654,25 +655,25 @@ function App() {
                 <div className="flex flex-row justify-center items-center gap-1 mt-[-4px]">
                   <button className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
-                      src="/images/power-1.jpeg"
+                      src="/images/power-5.gif"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
                   </button>
                   <button className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
-                      src="/images/power-2.jpeg"
+                      src="/images/power-6.gif"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
                   </button>
                   <button className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
-                      src="/images/power-3.jpeg"
+                      src="/images/power-7.gif"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
                   </button>
                   <div className="w-[101px] pt-2 active:scale-95 transition-all">
                     <img
-                      src="/images/power-4.jpeg"
+                      src="/images/power-8.gif"
                       className="w-full h-[90px] object-cover rounded-[7px]"
                     />
                   </div>
@@ -681,7 +682,7 @@ function App() {
                 <div className="flex flex-row justify-center items-center gap-1 mt-[-4px]">
                   <button className="w-[418px] pt-2 active:scale-95 transition-all">
                     <img
-                      src="/images/power-1.jpeg"
+                      src="/images/power.gif"
                       className="w-full h-[120px] object-cover rounded-[7px]"
                     />
                   </button>
