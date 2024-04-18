@@ -1,16 +1,90 @@
 import "./App.css";
-import { TbDotsVertical } from "react-icons/tb";
+import { TbDotsVertical, TbPlus } from "react-icons/tb";
 import { BsEmojiWink } from "react-icons/bs";
-import { IoIosSend } from "react-icons/io";
+import { IoIosSend, IoLogoGithub } from "react-icons/io";
 import { MdArrowForwardIos, MdDelete, MdKeyboardVoice } from "react-icons/md";
 import { TiAttachment } from "react-icons/ti";
 import { FiDownload } from "react-icons/fi";
+import { IoClose } from "react-icons/io5";
 
 function App() {
   return (
     <>
-      {/*Main Container*/}
-      <div className="flex flex-1 flex-row justify-between items-center w-full h-ful">
+      {/*Background */}
+      <div className="flex justify-center items-center min-w-[1240px] h-full bg-[#FAF7F2]">
+        {/* Background */}
+        <div className="flex flex-col w-full h-full overflow-hidden relative hidden">
+          <div className="flex flex-row justify-between gap-10 ml-10 absolute">
+            <img
+              src="/images/vector-one.svg"
+              className="bg-cover overflow-hidden"
+            />
+            <img
+              src="/images/vector-four.svg"
+              className="bg-cover overflow-hidden"
+            />
+            <img
+              src="/images/vector-five.svg"
+              className="bg-cover overflow-hidden"
+            />
+          </div>
+
+          <div className="flex flex-row mt-96 absolute">
+            <img
+              src="/images/vector-two.svg"
+              className="bg-cover overflow-hidden"
+            />
+            <img
+              src="/images/vector-three.svg"
+              className="bg-cover overflow-hidden"
+            />
+          </div>
+        </div>
+
+        {/* Main Container */}
+        <div className="flex justify-center w-[1240px] h-[700px] border border-[#BABCBE] bg-white text-[#3D4043]  absolute rounded-md">
+          <div className="flex flex-row justify-start items-end px-6 w-full h-10 bg-[#DFE1E6] rounded-t-md">
+
+            <div className="flex justify-center items-center bg-white w-16">
+              <div className="bg-[#DFE1E6] w-full h-full rounded-br-lg">
+                <img src="/images/dot-logo.svg" className="w-10 h-10"/>
+              </div>
+            </div>
+
+            <div className="flex flex-row justify-between items-center bg-white rounded-t-lg w-48 h-8">
+              <div className="flex flex-row justify-between items-center bg-white w-full h-full rounded-t-lg px-2">
+                <div className="flex flex-row justify-center items-center gap-2">
+                  <img src="/logo.svg" className="w-4 h-4"/>
+                  <p className="text-[12px]">Messaging App</p>
+                </div>
+
+                <IoClose />
+              </div>
+            </div>
+
+            <div className="flex flex-row justify-between items-center bg-white w-48 h-8">
+              <div className="flex flex-row justify-between items-center bg-[#DFE1E6] w-full h-full rounded-bl-lg px-2">
+                <div className="flex flex-row justify-center items-center gap-2">
+                  <IoLogoGithub />
+                  <p className="text-[12px]">devJennny</p>
+                </div>
+
+                <IoClose />
+              </div>
+
+              <div className=" flex justify-center items-center h-full bg-[#DFE1E6]">
+                <div className="border-r border-[#8B8E92] h-5"></div>
+              </div>
+            </div>
+
+            <div className="flex justify-center items-center w-10 h-8">
+            <TbPlus size={17} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex-1 flex-row justify-between items-center w-full h-full hidden">
         {/*Message Group - Container*/}
         <div className="flex flex-col items-center w-[500px] h-full bg-white pt-8">
           <div className="flex flex-col w-full px-10">
@@ -342,7 +416,7 @@ function App() {
         </div>
 
         {/*Chat Screen - Container*/}
-        <div className="flex flex-col justify-center items-center w-fit h-full px-5 bg-white border-x-[1px] border-[#DEDCDC]">
+        <div className="flex flex-col justify-center items-center w-full h-full px-5 bg-white border-x-[1px] border-[#DEDCDC]">
           <div className="flex flex-row justify-start items-center w-full gap-4 border-b-[1px] border-[#DEDCDC] pb-[15px]">
             <div className="w-[48px] h-[48px]">
               <img
