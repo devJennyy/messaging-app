@@ -53,7 +53,7 @@ function App() {
 
         {/* Main Container */}
         <div className="flex flex-col w-[1240px] h-[700px] border border-[#BABCBE] bg-white text-[#3D4043] absolute rounded-md">
-          <div>
+          <div className="flex flex-col">
             <div className="flex flex-row justify-start items-end px-6 w-full h-10 bg-[#DFE1E6] rounded-t-md">
               <div className="flex justify-center items-center bg-white w-16">
                 <div className="bg-[#DFE1E6] w-full h-full rounded-br-lg">
@@ -119,14 +119,41 @@ function App() {
             </div>
           </div>
 
-          <div className="flex flex-1 flex-row justify-between px-6 pb-1">
-            <div className="flex flex-1 max-w-[380px] h-full">
+          <div className="flex flex-1 flex-row justify-between px-6 py-2 text-[#272343]">
+            {/*Message Group - Container*/}
+            <div className="flex flex-1 max-w-[350px] h-full border-t border-l border-b border-[#E6E6E6]/66">
               
             </div>
 
-            <div className="flex flex-1 w-full h-full bg-red-900"></div>
-            <div className="flex flex-1 max-w-[380px] h-full bg-pink-600"></div>
-
+            {/*Chat Screen - Container*/}
+            <div className="flex flex-1 flex-col w-full h-full border border-[#E6E6E6]/66">
+              <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-b border-[#E6E6E6]/66 px-4">
+                <div className="flex flex-row gap-4">
+                  <img
+                    src="/images/power.jpg"
+                    className="w-10 h-10 object-cover rounded-full"
+                  />
+                  <div className="flex flex-col justify-start items-start">
+                    <p className="text-[16px] font-medium ">Power</p>
+                    <p className="text-[12px] font-normal text-[#76767C]/90">
+                      Chainsaw Man
+                    </p>
+                  </div>
+                </div>
+                <button className="text-[#E6E6E6]/66">
+                  <TbDotsVertical size={18} />
+                </button>
+              </div>
+            </div>
+            
+            {/* Media Container */}
+            <div className="flex flex-1 flex-col max-w-[350px] h-full border-t border-r border-b border-[#E6E6E6]/66">
+              <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center w-28 h-28 bg-gradient-to-t from-[#FD1C68] to-[#FDAE8F] rounded-full ">
+                  <img src="/images/power.jpg" className="object-cover w-24 h-24 rounded-full outline outline-[4px] outline-white"/>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
