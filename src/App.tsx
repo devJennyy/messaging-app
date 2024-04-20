@@ -1,21 +1,20 @@
 import "./App.css";
 import { TbDotsVertical, TbPlus } from "react-icons/tb";
-import { BsEmojiWink, BsMoonStars } from "react-icons/bs";
+import { BsEmojiSmile, BsEmojiWink, BsMoonStars } from "react-icons/bs";
+import { IoIosSend, IoLogoGithub, IoMdPhotos, IoMdRefresh } from "react-icons/io";
 import {
-  IoIosSend,
-  IoLogoGithub,
-  IoMdRefresh,
-} from "react-icons/io";
-import { MdArrowForwardIos, MdDelete, MdKeyboardVoice } from "react-icons/md";
-import { TiAttachment } from "react-icons/ti";
-import { FiDownload } from "react-icons/fi";
+  MdArrowForwardIos,
+  MdDelete,
+  MdKeyboardArrowDown,
+  MdKeyboardVoice,
+} from "react-icons/md";
+import { TiAttachment, TiMicrophone } from "react-icons/ti";
+import { FiDownload, FiPlus } from "react-icons/fi";
 import { IoClose, IoSunny } from "react-icons/io5";
-import { FaRegStar } from "react-icons/fa";
-import {
-  HiOutlineArrowSmLeft,
-  HiOutlineArrowSmRight,
-} from "react-icons/hi";
+import { FaCamera, FaHeart, FaRegStar } from "react-icons/fa";
+import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 import { LuSearch } from "react-icons/lu";
+import MessageText from "./components/MessageText";
 
 function App() {
   return (
@@ -52,9 +51,9 @@ function App() {
         </div>
 
         {/* Main Container */}
-        <div className="flex flex-col w-[1240px] h-[700px] border border-[#BABCBE] bg-white text-[#3D4043] absolute rounded-md">
-          <div className="flex flex-col">
-            <div className="flex flex-row justify-start items-end px-6 w-full h-10 bg-[#DFE1E6] rounded-t-md">
+        <div className="flex flex-col w-[1240px] h-[700px] border border-[#BABCBE] bg-white text-[#272727] absolute rounded-md">
+          <div className="flex flex-col border-b">
+            <div className="flex flex-row justify-start items-end px-5 w-full h-10 bg-[#DFE1E6] rounded-t-md">
               <div className="flex justify-center items-center bg-white w-16">
                 <div className="bg-[#DFE1E6] w-full h-full rounded-br-lg">
                   <img src="/images/dot-logo.svg" className="w-10 h-10" />
@@ -92,8 +91,8 @@ function App() {
               </div>
             </div>
 
-            <div className="flex flex-row justify-between items-center w-full h-10 px-5 gap-2">
-              <div className="flex flex-row justify-center items-center gap-2 mr-2">
+            <div className="flex flex-row justify-between items-center w-full h-10 px-4 gap-2">
+              <div className="flex flex-1 flex-row justify-between items-center gap-2 mr-2">
                 <HiOutlineArrowSmLeft size={20} />
                 <HiOutlineArrowSmRight size={20} />
                 <IoMdRefresh size={17} />
@@ -119,38 +118,166 @@ function App() {
             </div>
           </div>
 
-          <div className="flex flex-1 flex-row justify-between px-6 py-2 text-[#272343]">
+          <div className="flex flex-1 flex-row justify-between px-4">
             {/*Message Group - Container*/}
-            <div className="flex flex-1 max-w-[350px] h-full border-t border-l border-b border-[#E6E6E6]/66">
-              
+            <div className="flex flex-1 flex-col max-w-[340px] h-full gap-2">
+              <div className="flex flex-row justify-between items-center w-full h-16 gap-4 px-4">
+                <p className="font-medium">Messages</p>
+              </div>
+
+              <div className="flex flex-row items-center w-full px-4">
+                <input
+                  placeholder="Search or start a new chat"
+                  className="w-full outline-none border small-text py-2 rounded-full pl-9"
+                />
+
+                <button className="absolute text-left ml-3">
+                  <LuSearch />
+                </button>
+              </div>
+
+              <div className="flex flex-row p-4">
+                <div className="w-full h-16">
+                  <div className="flex flex-row justify-between">
+                    <div className="flex flex-row  gap-4">
+                      <img
+                        src="/images/power.jpg"
+                        className="object-cover w-10 h-10 rounded-md"
+                      />
+
+                      <div className="flex flex-col justify-between text-left">
+                        <p className="text-[14px]">Power</p>
+                        <p className="small-text">Sent you a voice message</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p className="small-text">9:30 PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/*Chat Screen - Container*/}
-            <div className="flex flex-1 flex-col w-full h-full border border-[#E6E6E6]/66">
-              <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-b border-[#E6E6E6]/66 px-4">
-                <div className="flex flex-row gap-4">
-                  <img
-                    src="/images/power.jpg"
-                    className="w-10 h-10 object-cover rounded-full"
-                  />
-                  <div className="flex flex-col justify-start items-start">
-                    <p className="text-[16px] font-medium ">Power</p>
-                    <p className="text-[12px] font-normal text-[#76767C]/90">
-                      Chainsaw Man
-                    </p>
+            <div className="flex flex-1 flex-col w-full h-full border-x border-[#E6E6E6]/66">
+              <div className="flex flex-col justify-between h-full">
+                <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-b border-[#E6E6E6]/66 px-4">
+                  <div className="flex flex-row gap-4">
+                    <img
+                      src="/images/power.jpg"
+                      className="w-10 h-10 object-cover rounded-full"
+                    />
+                    <div className="flex flex-col justify-start items-start">
+                      <p className="font-medium">Power</p>
+                      <p className="small-text">Last seen 8 minutes ago</p>
+                    </div>
+                  </div>
+                  <button>
+                    <TbDotsVertical size={18} />
+                  </button>
+                </div>
+
+                {/* Chat Field */}
+                <div className="flex flex-1 flex-col justify-end py-4">
+                  
+
+                  {/* <div className="flex flex-col px-4 items-end">
+                    <div className="flex justify-center items-center bg-black w-fit h-10 px-5 rounded-lg mr-2">
+                      <p className="receiver-message">Hello</p>
+                    </div>
+
+                    <div className="w-3 h-3 rounded-full bg-black"></div>
+                  </div> */}
+                </div>
+
+                <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-t border-[#E6E6E6]/66 px-4">
+                  <div className="flex flex-row gap-3">
+                    <button>
+                      <FiPlus />
+                    </button>
+                    <button>
+                      <IoMdPhotos />
+                    </button>
+                    <button>
+                      <FaCamera />
+                    </button>
+                    <button>
+                      <TiMicrophone size={18} />
+                    </button>
+                  </div>
+
+                  <div className="flex flex-row justify-center items-center w-full relative">
+                    <input
+                      placeholder="Type a message..."
+                      className="w-full outline-none border small-text py-2 rounded-md pl-3 pr-9"
+                    />
+
+                    <button className="absolute right-0 mr-3">
+                      <BsEmojiSmile />
+                    </button>
+                  </div>
+
+                  <div className="flex justify-center">
+                    <button>
+                      <FaHeart />
+                    </button>
                   </div>
                 </div>
-                <button className="text-[#E6E6E6]/66">
-                  <TbDotsVertical size={18} />
-                </button>
               </div>
             </div>
-            
+
             {/* Media Container */}
-            <div className="flex flex-1 flex-col max-w-[350px] h-full border-t border-r border-b border-[#E6E6E6]/66">
-              <div className="flex justify-center items-center">
-                <div className="flex justify-center items-center w-28 h-28 bg-gradient-to-t from-[#FD1C68] to-[#FDAE8F] rounded-full ">
-                  <img src="/images/power.jpg" className="object-cover w-24 h-24 rounded-full outline outline-[4px] outline-white"/>
+            <div className="flex flex-1 flex-col max-w-[340px] h-full gap-4 pl-4">
+              <div className="flex flex-col justify-center items-center gap-3 pt-4">
+                <div className="flex justify-center items-center w-28 h-28 bg-black rounded-full ">
+                  <img
+                    src="/images/power.jpg"
+                    className="object-cover w-24 h-24 rounded-full outline outline-[4px] outline-white"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <p className="font-medium">Power</p>
+                  <p className="small-text">Last seen 8 minutes ago</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-2">
+                  <div className="flex flex-row justify-between">
+                    <p className="medium-text">Attachments</p>
+                    <MdKeyboardArrowDown className="text-[#545454]" />
+                  </div>
+
+                  <div className="flex flex-col gap-2">
+                    <div className="w-full h-12 bg-[#F8F7F7]"></div>
+                    <div className="w-full h-12 bg-[#F8F7F7]"></div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <div className="flex flex-row justify-between">
+                    <p className="text-[12px] medium-text">Media</p>
+                    <MdKeyboardArrowDown className="text-[#545454]" />
+                  </div>
+
+                  <div className="flex flex-col gap-1">
+                    <div className="flex flex-row gap-1">
+                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                    </div>
+
+                    <div className="flex flex-row gap-1">
+                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                    </div>
+
+                    <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                  </div>
                 </div>
               </div>
             </div>
