@@ -128,7 +128,7 @@ function App() {
               <div className="flex flex-row items-center w-full px-4">
                 <input
                   placeholder="Search or start a new chat"
-                  className="w-full outline-none border small-text py-2 rounded-full pl-9"
+                  className="w-full outline-none border small-text py-2 rounded-md pl-9"
                 />
 
                 <button className="absolute text-left ml-3">
@@ -136,26 +136,10 @@ function App() {
                 </button>
               </div>
 
+              {/* People */}
               <div className="flex flex-row p-4">
-                <div className="w-full h-16">
-                  <div className="flex flex-row justify-between">
-                    <div className="flex flex-row  gap-4">
-                      <img
-                        src="/images/power.jpg"
-                        className="object-cover w-10 h-10 rounded-md"
-                      />
 
-                      <div className="flex flex-col justify-between text-left">
-                        <p className="text-[14px]">Power</p>
-                        <p className="small-text">Sent you a voice message</p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <p className="small-text">9:30 PM</p>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
 
@@ -179,16 +163,14 @@ function App() {
                 </div>
 
                 {/* Chat Field */}
-                <div className="flex flex-1 flex-col justify-end py-4">
-                  
-
-                  {/* <div className="flex flex-col px-4 items-end">
-                    <div className="flex justify-center items-center bg-black w-fit h-10 px-5 rounded-lg mr-2">
-                      <p className="receiver-message">Hello</p>
-                    </div>
-
-                    <div className="w-3 h-3 rounded-full bg-black"></div>
-                  </div> */}
+                <div className="flex flex-1 flex-col justify-end py-4 gap-2">
+                    <MessageText message="Hey there!" user="receiver" hasAvatar={false}/>
+                    <MessageText message="How are you?" user="receiver" hasAvatar={true}/>
+                    <MessageText message="Hello!" user="sender" hasAvatar={false}/>
+                    <MessageText message="I am fine and how are you?" user="sender" hasAvatar={true}/>
+                    <MessageText message="I am doing well, Can we meet tomorrow?" user="receiver" hasAvatar={true}/>
+                    <MessageText message="Yes Sure!" user="sender" hasAvatar={true}/>
+                    
                 </div>
 
                 <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-t border-[#E6E6E6]/66 px-4">
