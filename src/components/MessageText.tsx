@@ -9,7 +9,7 @@ const MessageText = ({ message, user, hasAvatar }: Props) => {
     <div className={`flex flex-col px-4 w-full ${user == "receiver" ? "items-start" : "items-end"}`}>
       <div
         className={`flex justify-center items-center ${
-          user == "receiver" ? "bg-[#E7E7E7]/60 ml-2" : "bg-[#030812] mr-2"
+          user == "receiver" ? "bg-[#E7E7E7]/60 ml-2" : "bg-[#09090B] mr-2"
         } w-fit h-10 px-5 rounded-lg`}
       >
         <p
@@ -23,7 +23,7 @@ const MessageText = ({ message, user, hasAvatar }: Props) => {
       {hasAvatar && (
         <div
           className={`w-3 h-3 rounded-full ${
-            user == "receiver" ? "bg-[#E7E7E7]/60" : "bg-[#030812]"
+            user == "receiver" ? "bg-[#E7E7E7]/60" : "bg-[#0B0D21]"
           }`}
         ></div>
       )}

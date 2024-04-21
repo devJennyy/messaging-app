@@ -5,14 +5,13 @@ import { IoIosSend, IoLogoGithub, IoMdPhotos, IoMdRefresh } from "react-icons/io
 import {
   MdArrowForwardIos,
   MdDelete,
-  MdFileDownload,
   MdKeyboardArrowDown,
   MdKeyboardVoice,
 } from "react-icons/md";
 import { TiAttachment, TiMicrophone } from "react-icons/ti";
 import { FiDownload, FiPlus } from "react-icons/fi";
 import { IoClose, IoSunny } from "react-icons/io5";
-import { FaCamera, FaFilePdf, FaHeart, FaRegStar } from "react-icons/fa";
+import { FaCamera, FaHeart, FaRegStar } from "react-icons/fa";
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 import { LuSearch } from "react-icons/lu";
 import MessageText from "./components/MessageText";
@@ -151,49 +150,49 @@ function App() {
                 />
 
                 <MessagePerson
-                  image="/images/power.jpg"
-                  name="Power"
-                  message="Sent you a voice message"
-                  time="9:30 PM"
+                  image="/images/denji.jpg"
+                  name="Denji"
+                  message="Nice. See you soon!"
+                  time="1:30 PM"
+                  unreadCount={2}
+                />
+
+                <MessagePerson
+                  image="/images/makima.jpg"
+                  name="Makima"
+                  message="I'm coming over."
+                  time="12:00 PM"
                   unreadCount={0}
                 />
 
                 <MessagePerson
-                  image="/images/power.jpg"
-                  name="Power"
-                  message="Sent you a voice message"
-                  time="9:30 PM"
-                  unreadCount={0}
+                  image="/images/aki.jpg"
+                  name="Aki"
+                  message="Okay."
+                  time="6:00 AM"
+                  unreadCount={1}
                 />
 
                 <MessagePerson
-                  image="/images/power.jpg"
-                  name="Power"
-                  message="Sent you a voice message"
-                  time="9:30 PM"
-                  unreadCount={0}
+                  image="/images/himeno.jpg"
+                  name="Himeno"
+                  message="Let's get drunk!"
+                  time="10:30 PM"
+                  unreadCount={3}
                 />
 
                 <MessagePerson
-                  image="/images/power.jpg"
-                  name="Power"
-                  message="Sent you a voice message"
-                  time="9:30 PM"
-                  unreadCount={0}
-                />
-
-                <MessagePerson
-                  image="/images/power.jpg"
-                  name="Power"
-                  message="Sent you a voice message"
-                  time="9:30 PM"
+                  image="/images/pochi.jpg"
+                  name="Pochi"
+                  message="Grrrr"
+                  time="6:00 PM"
                   unreadCount={0}
                 />
                 <MessagePerson
-                  image="/images/power.jpg"
-                  name="Power"
-                  message="Sent you a voice message"
-                  time="9:30 PM"
+                  image="/images/angel-devil.jpg"
+                  name="Angel Devil"
+                  message="Dont touch me."
+                  time="1:30 AM"
                   unreadCount={0}
                 />
               </div>
