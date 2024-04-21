@@ -5,16 +5,20 @@ import { IoIosSend, IoLogoGithub, IoMdPhotos, IoMdRefresh } from "react-icons/io
 import {
   MdArrowForwardIos,
   MdDelete,
+  MdFileDownload,
   MdKeyboardArrowDown,
   MdKeyboardVoice,
 } from "react-icons/md";
 import { TiAttachment, TiMicrophone } from "react-icons/ti";
 import { FiDownload, FiPlus } from "react-icons/fi";
 import { IoClose, IoSunny } from "react-icons/io5";
-import { FaCamera, FaHeart, FaRegStar } from "react-icons/fa";
+import { FaCamera, FaFilePdf, FaHeart, FaRegStar } from "react-icons/fa";
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 import { LuSearch } from "react-icons/lu";
 import MessageText from "./components/MessageText";
+import MessagePerson from "./components/MessagePerson";
+import Files from "./components/Files";
+import Media from "./components/Media";
 
 function App() {
   return (
@@ -136,11 +140,64 @@ function App() {
                 </button>
               </div>
 
-              {/* People */}
-              <div className="flex flex-row p-4">
+              {/* Message Person */}
+              <div className="flex flex-col p-4 gap-1">
+                <MessagePerson
+                  image="/images/power.jpg"
+                  name="Power"
+                  message="Sent you a voice message"
+                  time="9:30 PM"
+                  unreadCount={0}
+                />
 
-                
+                <MessagePerson
+                  image="/images/power.jpg"
+                  name="Power"
+                  message="Sent you a voice message"
+                  time="9:30 PM"
+                  unreadCount={0}
+                />
+
+                <MessagePerson
+                  image="/images/power.jpg"
+                  name="Power"
+                  message="Sent you a voice message"
+                  time="9:30 PM"
+                  unreadCount={0}
+                />
+
+                <MessagePerson
+                  image="/images/power.jpg"
+                  name="Power"
+                  message="Sent you a voice message"
+                  time="9:30 PM"
+                  unreadCount={0}
+                />
+
+                <MessagePerson
+                  image="/images/power.jpg"
+                  name="Power"
+                  message="Sent you a voice message"
+                  time="9:30 PM"
+                  unreadCount={0}
+                />
+
+                <MessagePerson
+                  image="/images/power.jpg"
+                  name="Power"
+                  message="Sent you a voice message"
+                  time="9:30 PM"
+                  unreadCount={0}
+                />
+                <MessagePerson
+                  image="/images/power.jpg"
+                  name="Power"
+                  message="Sent you a voice message"
+                  time="9:30 PM"
+                  unreadCount={0}
+                />
               </div>
+              
             </div>
 
             {/*Chat Screen - Container*/}
@@ -164,13 +221,36 @@ function App() {
 
                 {/* Chat Field */}
                 <div className="flex flex-1 flex-col justify-end py-4 gap-2">
-                    <MessageText message="Hey there!" user="receiver" hasAvatar={false}/>
-                    <MessageText message="How are you?" user="receiver" hasAvatar={true}/>
-                    <MessageText message="Hello!" user="sender" hasAvatar={false}/>
-                    <MessageText message="I am fine and how are you?" user="sender" hasAvatar={true}/>
-                    <MessageText message="I am doing well, Can we meet tomorrow?" user="receiver" hasAvatar={true}/>
-                    <MessageText message="Yes Sure!" user="sender" hasAvatar={true}/>
-                    
+                  <MessageText
+                    message="Hey there!"
+                    user="receiver"
+                    hasAvatar={false}
+                  />
+                  <MessageText
+                    message="How are you?"
+                    user="receiver"
+                    hasAvatar={true}
+                  />
+                  <MessageText
+                    message="Hello!"
+                    user="sender"
+                    hasAvatar={false}
+                  />
+                  <MessageText
+                    message="I am fine and how are you?"
+                    user="sender"
+                    hasAvatar={true}
+                  />
+                  <MessageText
+                    message="I am doing well, Can we meet tomorrow?"
+                    user="receiver"
+                    hasAvatar={true}
+                  />
+                  <MessageText
+                    message="Yes Sure!"
+                    user="sender"
+                    hasAvatar={true}
+                  />
                 </div>
 
                 <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-t border-[#E6E6E6]/66 px-4">
@@ -212,7 +292,7 @@ function App() {
             {/* Media Container */}
             <div className="flex flex-1 flex-col max-w-[340px] h-full gap-4 pl-4">
               <div className="flex flex-col justify-center items-center gap-3 pt-4">
-                <div className="flex justify-center items-center w-28 h-28 bg-black rounded-full ">
+                <div className="flex justify-center items-center w-28 h-28 bg-[#030812] rounded-full ">
                   <img
                     src="/images/power.jpg"
                     className="object-cover w-24 h-24 rounded-full outline outline-[4px] outline-white"
@@ -231,9 +311,17 @@ function App() {
                     <MdKeyboardArrowDown className="text-[#545454]" />
                   </div>
 
-                  <div className="flex flex-col gap-2">
-                    <div className="w-full h-12 bg-[#F8F7F7]"></div>
-                    <div className="w-full h-12 bg-[#F8F7F7]"></div>
+                  <div className="flex flex-col gap-1">
+                    <Files
+                      fileTitle="The Chainsaw Man"
+                      fileSize="313 KB"
+                      dateReceive="22 Dec, 2022"
+                    />
+                    <Files
+                      fileTitle="The Chainsaw Man"
+                      fileSize="313 KB"
+                      dateReceive="22 Dec, 2022"
+                    />
                   </div>
                 </div>
 
@@ -245,20 +333,20 @@ function App() {
 
                   <div className="flex flex-col gap-1">
                     <div className="flex flex-row gap-1">
-                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
-                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
-                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
-                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                      <Media mediaImage="images/power-1.gif" />
+                      <Media mediaImage="images/power-2.gif" />
+                      <Media mediaImage="images/power-3.gif" />
+                      <Media mediaImage="images/power-4.gif" />
                     </div>
 
                     <div className="flex flex-row gap-1">
-                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
-                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
-                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
-                      <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                      <Media mediaImage="images/power-5.gif" />
+                      <Media mediaImage="images/power-6.gif" />
+                      <Media mediaImage="images/power-7.gif" />
+                      <Media mediaImage="images/power-8.gif" />
                     </div>
 
-                    <div className="w-full h-[75px] bg-[#F8F7F7] rounded-md"></div>
+                    <Media mediaImage="images/chainsawman.jpeg" />
                   </div>
                 </div>
               </div>
