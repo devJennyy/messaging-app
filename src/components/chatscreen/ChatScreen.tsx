@@ -5,8 +5,41 @@ import { IoMdPhotos } from "react-icons/io";
 import { TbDotsVertical } from "react-icons/tb";
 import { TiMicrophone } from "react-icons/ti";
 import MessageText from "./MessageText";
+import { IChatMessage } from "../../interface/IChatMessage";
 
 const ChatScreen = () => {
+  const chatMessages: IChatMessage[] = [
+    {
+      message: "Hey there!",
+      user: "receiver",
+      hasAvatar: false,
+    },
+    {
+      message: "How are you?",
+      user: "receiver",
+      hasAvatar: true,
+    },
+    {
+      message: "Hello!",
+      user: "sender",
+      hasAvatar: false,
+    },
+    {
+      message: "I am fine and how are you?",
+      user: "sender",
+      hasAvatar: true,
+    },
+    {
+      message: "I am doing well, Can we meet tomorrow?",
+      user: "receiver",
+      hasAvatar: true,
+    },
+    {
+      message: "Yes Sure!",
+      user: "sender",
+      hasAvatar: true,
+    },
+  ];
   return (
     <div className="flex flex-1 flex-col w-full h-full border-x border-[#E6E6E6]/66">
       <div className="flex flex-col justify-between h-full">
@@ -28,24 +61,15 @@ const ChatScreen = () => {
 
         {/* Chat Field */}
         <div className="flex flex-1 flex-col justify-end py-4 gap-2">
-          <MessageText message="Hey there!" user="receiver" hasAvatar={false} />
-          <MessageText
-            message="How are you?"
-            user="receiver"
-            hasAvatar={true}
-          />
-          <MessageText message="Hello!" user="sender" hasAvatar={false} />
-          <MessageText
-            message="I am fine and how are you?"
-            user="sender"
-            hasAvatar={true}
-          />
-          <MessageText
-            message="I am doing well, Can we meet tomorrow?"
-            user="receiver"
-            hasAvatar={true}
-          />
-          <MessageText message="Yes Sure!" user="sender" hasAvatar={true} />
+          {chatMessages?.map((message) => {
+            return (
+              <MessageText
+                message={message.message}
+                user={message.user}
+                hasAvatar={message.hasAvatar}
+              />
+            );
+          })}
         </div>
 
         <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-t border-[#E6E6E6]/66 px-4">

@@ -1,7 +1,59 @@
 import { LuSearch } from "react-icons/lu";
 import MessagePerson from "./MessagePerson";
+import { IDirectMessage } from "../../interface/IDirectMessage";
 
 const DirectMessages = () => {
+  const directMessages: IDirectMessage[] = [
+    {
+      image: "/images/power.jpg",
+      name: "Power",
+      message: "Sent you a voice message",
+      time: "9:30 PM",
+      unreadCount: 0,
+    },
+    {
+      image: "/images/denji.jpg",
+      name: "Denji",
+      message: "Nice. See you soon!",
+      time: "1:30 PM",
+      unreadCount: 2,
+    },
+    {
+      image: "/images/makima.jpg",
+      name: "Makima",
+      message: "I'm coming over.",
+      time: "12:00 PM",
+      unreadCount: 0,
+    },
+    {
+      image: "/images/aki.jpg",
+      name: "Aki",
+      message: "Okay.",
+      time: "6:00 AM",
+      unreadCount: 1,
+    },
+    {
+      image: "/images/himeno.jpg",
+      name: "Himeno",
+      message: "Let's get drunk!",
+      time: "10:30 PM",
+      unreadCount: 3,
+    },
+    {
+      image: "/images/pochi.jpg",
+      name: "Pochi",
+      message: "Grrrr",
+      time: "6:00 PM",
+      unreadCount: 0,
+    },
+    {
+      image: "/images/angel-devil.jpg",
+      name: "Angel Devil",
+      message: "Dont touch me.",
+      time: "1:30 AM",
+      unreadCount: 0,
+    },
+  ];
   return (
     <div className="flex flex-1 flex-col max-w-[340px] h-full gap-2">
       <div className="flex flex-row justify-between items-center w-full h-16 gap-4 px-4">
@@ -19,62 +71,18 @@ const DirectMessages = () => {
         </button>
       </div>
 
-      {/* Message Person */}
       <div className="flex flex-col p-4 gap-1">
-        <MessagePerson
-          image="/images/power.jpg"
-          name="Power"
-          message="Sent you a voice message"
-          time="9:30 PM"
-          unreadCount={0}
-        />
-
-        <MessagePerson
-          image="/images/denji.jpg"
-          name="Denji"
-          message="Nice. See you soon!"
-          time="1:30 PM"
-          unreadCount={2}
-        />
-
-        <MessagePerson
-          image="/images/makima.jpg"
-          name="Makima"
-          message="I'm coming over."
-          time="12:00 PM"
-          unreadCount={0}
-        />
-
-        <MessagePerson
-          image="/images/aki.jpg"
-          name="Aki"
-          message="Okay."
-          time="6:00 AM"
-          unreadCount={1}
-        />
-
-        <MessagePerson
-          image="/images/himeno.jpg"
-          name="Himeno"
-          message="Let's get drunk!"
-          time="10:30 PM"
-          unreadCount={3}
-        />
-
-        <MessagePerson
-          image="/images/pochi.jpg"
-          name="Pochi"
-          message="Grrrr"
-          time="6:00 PM"
-          unreadCount={0}
-        />
-        <MessagePerson
-          image="/images/angel-devil.jpg"
-          name="Angel Devil"
-          message="Dont touch me."
-          time="1:30 AM"
-          unreadCount={0}
-        />
+        {directMessages?.map((message) => {
+          return (
+            <MessagePerson
+              image={message.image}
+              name={message.name}
+              message={message.message}
+              time={message.time}
+              unreadCount={message.unreadCount}
+            />
+          );
+        })}
       </div>
     </div>
   );

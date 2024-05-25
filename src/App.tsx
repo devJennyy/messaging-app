@@ -11,7 +11,7 @@ function App() {
       <div className="flex justify-center items-center min-w-[1240px] h-full">
         <Background />
 
-        <div className="flex flex-col w-[1240px] h-[700px] border border-[#BABCBE] bg-white text-[#272727] absolute rounded-md">
+        <div className="flex flex-col w-[1240px] h-[700px] border border-[#BABCBE] bg-white dark:bg-black text-[#272727] absolute rounded-md">
           <BrowserMockup />
 
           <div className="flex flex-1 flex-row justify-between px-4">
