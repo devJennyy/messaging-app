@@ -6,7 +6,14 @@ import { FaRegStar } from "react-icons/fa";
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 import { LuSearch } from "react-icons/lu";
 
-const BrowserMockup = () => {
+interface Props{
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  setDarkmode: any;
+  darkmode: boolean;
+}
+
+const BrowserMockup = ( {setDarkmode, darkmode} : Props ) => {
+
   return (
     <div className="flex flex-col border-b">
       <div className="flex flex-row justify-start items-end px-5 w-full h-10 bg-[#DFE1E6] rounded-t-md">
@@ -63,13 +70,13 @@ const BrowserMockup = () => {
           <FaRegStar size={15} className="absolute right-0 mr-3" />
         </div>
 
-        <div className="flex justify-between items-center w-16 h-7 bg-[#F1F3F4] rounded-full px-1 shadow-sm">
-          <div className="flex justify-between items-center w-6 h-6 rounded-full bg-white">
+        <div className="flex justify-between items-center w-16 h-7 bg-[#F1F3F4] dark:bg-[#27272A] rounded-full px-1 shadow-sm">
+          <button onClick={ () => setDarkmode(!darkmode)} className={`flex justify-between items-center w-6 h-6 rounded-full dark:text-transparent ${!darkmode && `bg-white`}`}>
             <IoSunny className="w-full" />
-          </div>
-          <div className="flex justify-between items-center w-6 h-6 rounded-full bg-white">
+          </button>
+          <button onClick={ () => setDarkmode(!darkmode)} className={`flex justify-between items-center w-6 h-6 rounded-full text-transparent dark:text-black ${darkmode && `bg-white`}`}>
             <BsMoonStars size={14} className="w-full" />
-          </div>
+          </button>
         </div>
       </div>
     </div>
