@@ -1,3 +1,5 @@
+`Dark Mode: Work In Progress`
+
 # Messaging App
 Static website for a messaging app https://messaging-app-devjenny.vercel.app
 
