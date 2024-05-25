@@ -10,7 +10,11 @@ function App() {
   const [darkmode, setDarkmode] = useState(false);
   return (
     <>
-      <div className={`flex justify-center items-center min-w-[1240px] h-full ${darkmode && `dark`}`}>
+      <div
+        className={`flex justify-center items-center min-w-[1240px] dark:bg-[#030812] h-full ${
+          darkmode && `dark`
+        }`}
+      >
         <Background />
 
         <div className="flex flex-col w-[1240px] h-[700px] border border-[#BABCBE] bg-white dark:bg-black text-[#272727] absolute rounded-md">

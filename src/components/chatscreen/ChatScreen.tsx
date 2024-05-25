@@ -41,9 +41,9 @@ const ChatScreen = () => {
     },
   ];
   return (
-    <div className="flex flex-1 flex-col w-full h-full border-x border-[#E6E6E6]/66">
+    <div className="flex flex-1 flex-col w-full h-full border-x border-[#E6E6E6]/66 dark:border-[#202020] dark:text-white">
       <div className="flex flex-col justify-between h-full">
-        <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-b border-[#E6E6E6]/66 px-4">
+        <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-b border-[#E6E6E6]/66 dark:border-[#202020] px-4">
           <div className="flex flex-row gap-4">
             <img
               src="/images/power.jpg"
@@ -72,10 +72,10 @@ const ChatScreen = () => {
           })}
         </div>
 
-        <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-t border-[#E6E6E6]/66 px-4">
+        <div className="flex flex-row justify-between items-center w-full h-16 gap-4 border-t border-[#E6E6E6]/66 dark:border-[#202020] px-4">
           <div className="flex flex-row gap-3">
             <button>
-              <FiPlus />
+              <FiPlus size={18}/>
             </button>
             <button>
               <IoMdPhotos />
@@ -91,7 +91,7 @@ const ChatScreen = () => {
           <div className="flex flex-row justify-center items-center w-full relative">
             <input
               placeholder="Type a message..."
-              className="w-full outline-none border small-text py-2 rounded-md pl-3 pr-9"
+              className="w-full outline-none border small-text py-2 rounded-md pl-3 pr-9 dark:bg-[#2B2B2B] dark:border-none"
             />
 
             <button className="absolute right-0 mr-3">

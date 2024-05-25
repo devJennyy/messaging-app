@@ -55,7 +55,7 @@ const DirectMessages = () => {
     },
   ];
   return (
-    <div className="flex flex-1 flex-col max-w-[340px] h-full gap-2">
+    <div className="flex flex-1 flex-col max-w-[340px] h-full gap-2 dark:text-white">
       <div className="flex flex-row justify-between items-center w-full h-16 gap-4 px-4">
         <p className="font-medium">Messages</p>
       </div>
@@ -63,7 +63,7 @@ const DirectMessages = () => {
       <div className="flex flex-row items-center w-full px-4">
         <input
           placeholder="Search or start a new chat"
-          className="w-full outline-none border small-text py-2 rounded-md pl-9"
+          className="w-full outline-none border small-text py-2 rounded-md pl-9 dark:bg-[#2B2B2B] dark:border-none"
         />
 
         <button className="absolute text-left ml-3">
