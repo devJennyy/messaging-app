@@ -25,12 +25,12 @@ const ChatScreen = () => {
       hasAvatar: false,
     },
     {
-      message: "I am fine and how are you?",
+      message: "Im fine, how about you?",
       user: "sender",
       hasAvatar: true,
     },
     {
-      message: "I am doing well, Can we meet tomorrow?",
+      message: "Good! Can we meet tomorrow?",
       user: "receiver",
       hasAvatar: true,
     },
@@ -51,7 +51,7 @@ const ChatScreen = () => {
             />
             <div className="flex flex-col justify-start items-start">
               <p className="font-medium">Power</p>
-              <p className="small-text">Last seen 8 minutes ago</p>
+              <p className="small-text dark:text-white/90">Last seen 8 minutes ago</p>
             </div>
           </div>
           <button>
@@ -91,7 +91,7 @@ const ChatScreen = () => {
           <div className="flex flex-row justify-center items-center w-full relative">
             <input
               placeholder="Type a message..."
-              className="w-full outline-none border small-text py-2 rounded-md pl-3 pr-9 dark:bg-[#2B2B2B] dark:border-none"
+              className="w-full outline-none border small-text py-2 rounded-md pl-3 pr-9 dark:bg-[#2B2B2B] dark:border-none dark:text-white"
             />
 
             <button className="absolute right-0 mr-3">

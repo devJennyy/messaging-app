@@ -1,6 +1,6 @@
 import { LuSearch } from "react-icons/lu";
-import MessagePerson from "./MessagePerson";
 import { IDirectMessage } from "../../interface/IDirectMessage";
+import MessageBox from "./MessageBox";
 
 const DirectMessages = () => {
   const directMessages: IDirectMessage[] = [
@@ -63,7 +63,7 @@ const DirectMessages = () => {
       <div className="flex flex-row items-center w-full px-4">
         <input
           placeholder="Search or start a new chat"
-          className="w-full outline-none border small-text py-2 rounded-md pl-9 dark:bg-[#2B2B2B] dark:border-none"
+          className="w-full outline-none border small-text py-2 rounded-md pl-9 dark:bg-[#2B2B2B] dark:border-none dark:text-white"
         />
 
         <button className="absolute text-left ml-3">
@@ -74,7 +74,7 @@ const DirectMessages = () => {
       <div className="flex flex-col p-4 gap-1">
         {directMessages?.map((message) => {
           return (
-            <MessagePerson
+            <MessageBox
               image={message.image}
               name={message.name}
               message={message.message}

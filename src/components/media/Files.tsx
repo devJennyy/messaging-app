@@ -9,15 +9,15 @@ interface Props {
 
 const Files = ({ fileTitle, fileSize, dateReceive }: Props) => {
   return (
-    <div className="w-full h-12 bg-[#F8F7F7]">
+    <div className="w-full h-12 bg-[#F8F7F7] dark:bg-[#202020] dark:text-white/90 rounded-sm">
       <div className="flex flex-row justify-between items-center w-full h-full px-4">
         <div className="flex flex-row items-center gap-3">
           <FaFilePdf size={18} />
           <div className="flex flex-col text-left gap-1">
-            <p className="text-[10px] text-[#272727]">{fileTitle}</p>
+            <p className="text-[10px] text-[#272727] dark:text-white/90">{fileTitle}</p>
             <div className="flex flew-row gap-2">
-              <p className="text-[9px] text-[#545454]/90">{fileSize}</p>
-              <p className="text-[9px] text-[#545454]/90">{dateReceive}</p>
+              <p className="text-[9px] text-[#545454]/90 dark:text-white/50">{fileSize}</p>
+              <p className="text-[9px] text-[#545454]/90 dark:text-white/50">{dateReceive}</p>
             </div>
           </div>
         </div>

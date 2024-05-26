@@ -7,7 +7,7 @@ import Media from "./components/media/Media";
 import { useState } from "react";
 
 function App() {
-  const [darkmode, setDarkmode] = useState(false);
+  const [darkmode, setDarkmode] = useState(true);
   return (
     <>
       <div

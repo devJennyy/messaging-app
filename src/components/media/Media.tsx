@@ -43,24 +43,24 @@ const Media = () => {
     },
   ];
   return (
-    <div className="flex flex-1 flex-col max-w-[340px] h-full gap-4 pl-4">
+    <div className="flex flex-1 flex-col max-w-[340px] h-full gap-4 pl-4 ">
       <div className="flex flex-col justify-center items-center gap-3 pt-4">
-        <div className="flex justify-center items-center w-28 h-28 bg-[#030812] rounded-full ">
+        <div className="flex justify-center items-center w-28 h-28 bg-[#030812] dark:bg-white rounded-full ">
           <img
             src="/images/power.jpg"
-            className="object-cover w-24 h-24 rounded-full outline outline-[4px] outline-white"
+            className="object-cover w-24 h-24 rounded-full outline outline-[5.5px] outline-white dark:outline-[#030812]"
           />
         </div>
         <div className="flex flex-col">
-          <p className="font-medium">Power</p>
-          <p className="small-text">Last seen 8 minutes ago</p>
+          <p className="font-medium dark:text-white">Power</p>
+          <p className="small-text dark:text-white">Last seen 8 minutes ago</p>
         </div>
       </div>
 
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
           <div className="flex flex-row justify-between">
-            <p className="medium-text">Attachments</p>
+            <p className="medium-text dark:text-white">Attachments</p>
             <MdKeyboardArrowDown className="text-[#545454]" />
           </div>
 
@@ -79,7 +79,7 @@ const Media = () => {
 
         <div className="flex flex-col gap-2">
           <div className="flex flex-row justify-between">
-            <p className="text-[12px] medium-text">Media</p>
+            <p className="text-[12px] medium-text dark:text-white">Media</p>
             <MdKeyboardArrowDown className="text-[#545454]" />
           </div>
 
